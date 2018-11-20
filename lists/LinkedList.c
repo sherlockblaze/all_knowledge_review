@@ -1,7 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
+#include "linkedlist.h"
 
 int main() {
-	printf("init...");
+	printf("init...\n");
+	struct Node node;
 
 	return 0;
 }
