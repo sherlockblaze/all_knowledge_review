@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "linkedlist.h"
-#include "myerror.h"
+#include "../errors/myerror.h"
 
 // Definition of Nodes, Of course you can use different data type.
 struct Node
@@ -90,8 +90,17 @@ DeleteList(List L)
 	}
 }
 
+
+void
+FatalError(char *msg)
+{
+	printf("fatal error: %s\n", msg);
+	exit(1);
+}
+
 int
 main()
 {
+	FatalError("No room");
 	return 0;
 }

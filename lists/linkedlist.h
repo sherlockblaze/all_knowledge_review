@@ -1,4 +1,6 @@
-#ifndef _Linkedlist_H
+#ifndef _LINKEDLIST_H_
+#define _LINKEDLIST_H_
+
 
 struct Node;
 // Definition
