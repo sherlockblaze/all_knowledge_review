@@ -66,7 +66,7 @@ void
 Insert(List L, Position P, int value)
 {
 	Position TmpPointer;
-	TmpPointer = malloc(sizeof(struct Node));
+	TmpPointer = (struct Node *)malloc(sizeof(struct Node));
 	if (TmpPointer == NULL)
 		FatalError("No room!!");
 	TmpPointer->Value = value;
@@ -88,4 +88,10 @@ DeleteList(List L)
 		free(P);
 		P = TmpPointer;
 	}
+}
+
+int
+main()
+{
+	return 0;
 }
