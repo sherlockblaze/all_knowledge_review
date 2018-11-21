@@ -17,15 +17,19 @@ ElementType IsLast(Position P);
 Position Find(List L, ElementType target);
 void Delete(List L, ElementType target);
 Position FindPrevious(List L, ElementType target);
-void Insert(List L, Position P, ElementType value);
+int Insert(List L, ElementType value);
+int InsertArray(List L, ElementType *Array, int length);
+int InsertAt(List L, int index, ElementType value);
 void DeleteList(List L);
 Position Header(List L);
 Position First(List L);
 Position Advance(Position P);
 ElementType Retrieve(Position P);
+void TraverseList(List L);
 
 #endif /* _Linkedlist_H */
 
+#include <stdio.h>
 #include "../errors/myerror.h"
 
 // Definition of Nodes, Of course you can use different data type.
@@ -38,7 +42,9 @@ struct Node
 List
 NewList()
 {
-
+	List list = (struct Node *)malloc(sizeof(struct Node));
+	list->Next = NULL;
+	return list;
 }
 
 // Check the list whether is empty list or not
@@ -92,20 +98,56 @@ FindPrevious(List L, ElementType target)
 	return P;
 }
 
-// Pick a position where you wanna insert a value behind it.
-void
-Insert(List L, Position P, ElementType value)
+int
+Insert(List L, ElementType value)
 {
-	Position TmpPointer;
+	Position TmpPointer, LastNode;
+	TmpPointer = (struct Node *) malloc(sizeof (struct Node));
+	if (TmpPointer == NULL)
+	{
+		FatalError("No room!!");
+		return 0;
+	}
+	LastNode = L;
+	while(LastNode->Next != NULL)
+		LastNode = LastNode->Next;
+	TmpPointer->Value = value;
+	TmpPointer->Next = NULL;
+	LastNode->Next = TmpPointer;
+	return 1;
+}
+
+int
+InsertArray(List L, ElementType *Array, int length)
+{
+	for(int i = 0; i < length; ++i)
+		if (!Insert(L, *(Array+i)))
+		{
+			FatalError("No Enough room!!");
+			printf("Inserted %d values", length + 1);
+			return 0;
+		}
+	return 1;
+}
+
+// Pick a position where you wanna insert a value behind it.
+int
+InsertAt(List L, int index, ElementType value)
+{
+	/*Position TmpPointer;
 	TmpPointer = (struct Node *)malloc(sizeof(struct Node));
 	if (TmpPointer == NULL)
+	{
 		FatalError("No room!!");
+		return 0;
+	}
 	TmpPointer->Value = value;
 	TmpPointer->Next = P->Next;
 	P->Next = TmpPointer;
+	return 1;*/
 }
 
-// free all nodes, you should keep a pointer poElementType at next node you wanna free.
+// free all nodes, you should keep a pointer point ElementType at next node you wanna free.
 void
 DeleteList(List L)
 {
@@ -119,4 +161,16 @@ DeleteList(List L)
 		free(P);
 		P = TmpPointer;
 	}
+}
+
+void
+TraverseList(List L)
+{
+	Position TmpPointer = L->Next;
+	while(TmpPointer != NULL)
+	{
+		printf("%d\t", TmpPointer->Value);
+		TmpPointer = TmpPointer->Next;
+	}
+	printf("\n");
 }
