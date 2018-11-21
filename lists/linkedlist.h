@@ -173,12 +173,14 @@ InsertAt(List L, int index, ElementType value)
 	return 1;
 }
 
+// Insert a value before the index you give
 int
 InsertBefore(List L, int index, ElementType value)
 {
 	InsertAt(L, index - 1, value);
 }
 
+// Insert a value after the index you give
 int
 InsertAfter(List L, int index, ElementType value)
 {
@@ -201,6 +203,7 @@ DeleteList(List L)
 	}
 }
 
+// Traverse the list
 void
 TraverseList(List L)
 {
