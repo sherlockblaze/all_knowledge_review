@@ -14,7 +14,7 @@ Each node contains the element and a pointer points to the next node, we call it
 
 In my version, I put a head node to save the length of the linked list.
 
-![With Head Node](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/listedlist_with_head_node.png)
+![With Head Node](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/linkedlist_with_head_node.png)
 
 Now we can see the operations of LinkedList.
 
@@ -47,6 +47,8 @@ Second step, because we just get one Next pointer for each node, so, it just mak
 ![Delete Step2](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/delete_operation_step2.png)
 
 **So delete Successed!!**
+
+![Delete Successed](https://github.com/sherlockblaze/data_structures_review/blob/master/picutre/linkedlist/delete_success.png)
 
 ##### Conclusion
 
