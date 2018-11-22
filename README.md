@@ -16,6 +16,13 @@
 2. work with c++11
 3. work with python3.6
 
+## schedule
+
+| Date | Content | Percent | README |
+| --- | --- | --- | --- |
+| 2018.11.22 | LinkedList | 100% | [LinkedList](https://github.com/sherlockblaze/data_structures_review/blob/master/lists/README.md#LinkedList)
+| 2018.11.22 | DoublyLinkedList | 10% |
+
 ## Wishlist
 
 ### Data Structures
@@ -54,10 +61,3 @@
 ### Deep Learning
 
 ***Waiting... focus on data sturctures now***
-
-## schedule
-
-| Date | Content | Percent | README |
-| --- | --- | --- | --- |
-| 2018.11.22 | LinkedList | 100% | [LinkedList](https://github.com/sherlockblaze/data_structures_review/blob/master/lists/README.md#LinkedList)
-| 2018.11.22 | DoublyLinkedList | 10% |
