@@ -1,8 +1,8 @@
 ## Contents
-* [LinkedList](#LinkedList)
-    * [Operation](#Operation)
-    	* [Insert](#Insert)
-    	* [Delete](#Delete)
+- [LinkedList](#LinkedList)
+    - [Operation](#Operation)
+    	- [Insert](#Insert)
+    	- [Delete](#Delete)
 
 ### LinkedList
 
