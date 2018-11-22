@@ -12,8 +12,7 @@ typedef PtrToNode Position;
 
 // Operation
 List NewList();
-List MakeEmpty(List L);
-ElementType IsEmpty(List L);
+int IsEmpty(List L);
 ElementType IsLast(Position P);
 Position Find(List L, ElementType target);
 void Delete(List L, ElementType target);
@@ -108,9 +107,7 @@ Insert(List L, ElementType value)
 	Position TmpPointer, LastNode;
 	TmpPointer = (struct Node *) malloc(sizeof (struct Node));
 	if (TmpPointer == NULL)
-	{
 		FatalError("Insert failed. No enough room!!");
-	}
 	LastNode = L;
 	while(LastNode->Next != NULL)
 		LastNode = LastNode->Next;
@@ -132,19 +129,13 @@ InsertArray(List L, ElementType *array, int length)
 void
 InsertAt(List L, int index, ElementType value)
 {
-	if (index > L->Value)
-	{
+	if (index > L->Value || index < 0)
 		FatalError("Sorry! Wrong index!!"); 
-	}
 	if (index == L->Value)
-	{
 		Insert(L, value);
-	}
 	PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
 	if (NewNode == NULL)
-	{
 		FatalError("No Enough room!");
-	}
 	NewNode->Value = value;
 	Position TmpPointer;
 	TmpPointer = L->Next;
