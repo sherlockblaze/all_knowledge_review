@@ -10,6 +10,9 @@
     - [Data Structures](#data-structures--classic-algorithms)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
+- [Knowledge](#Knowledge)
+	- [About Math](#About-Math)
+	- [About Algorithms](#About-Algorithms)
 
 ## Environment
 
@@ -58,18 +61,23 @@
 	- [ ] Quicksort
 	- [ ] Bucket Sort
 
-***Knowledge***
+### Knowledge
 
-- [ ] About Math
-- [ ] About Algorithms
-	- [x] [Loop Invariants](./knowledge/LoopInvariants.md)
+#### About Math
+
+- [ ] Math
+
+
+#### About Algorithms
+
+- [x] [Loop Invariants](./knowledge/LoopInvariants.md/#loop-invariants)
 
 ***and so on...***
 
 ### Machine Learning
 
-***Waiting... focus on data sturctures now***
+***Waiting... focus on data structures now***
 
 ### Deep Learning
 
-***Waiting... focus on data sturctures now***
+***Waiting... focus on data structures now***
