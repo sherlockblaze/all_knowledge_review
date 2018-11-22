@@ -48,7 +48,7 @@ Second step, because we just get one Next pointer for each node, so, it just mak
 
 **So delete Successed!!**
 
-![Delete Successed](https://github.com/sherlockblaze/data_structures_review/blob/master/picutre/linkedlist/delete_success.png)
+![Delete Successed](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/delete_success.png)
 
 ##### Conclusion
 
