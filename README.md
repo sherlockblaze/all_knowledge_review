@@ -7,7 +7,7 @@
 ## Contents
 - [Environment](#Environment)
 - [Wishlist](#Wishlist)
-    - [Data Structures](data-structures--classic-algorithms)
+    - [Data Structures](#data-structures--classic-algorithms)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
 
