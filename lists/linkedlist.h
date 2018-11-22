@@ -17,16 +17,13 @@ ElementType IsLast(Position P);
 Position Find(List L, ElementType target);
 void Delete(List L, ElementType target);
 Position FindPrevious(List L, ElementType target);
-int Insert(List L, ElementType value);
-int InsertArray(List L, ElementType *array, int length);
-int InsertAt(List L, int index, ElementType value);
-int InsertBefore(List L, int index, ElementType value);
-int InsertAfter(List L, int index, ElementType value);
+void Insert(List L, ElementType value);
+void InsertArray(List L, ElementType *array, int length);
+void InsertAt(List L, int index, ElementType value);
+void InsertBefore(List L, int index, ElementType value);
+void InsertAfter(List L, int index, ElementType value);
 void DeleteList(List L);
-Position Header(List L);
-Position First(List L);
-Position Advance(Position P);
-ElementType Retrieve(Position P);
+ElementType Retrieve(List L, int index);
 void TraverseList(List L);
 void ListTest();
 
@@ -104,15 +101,14 @@ FindPrevious(List L, ElementType target)
 }
 
 // Insert a value after all elements
-int
+void
 Insert(List L, ElementType value)
 {
 	Position TmpPointer, LastNode;
 	TmpPointer = (struct Node *) malloc(sizeof (struct Node));
 	if (TmpPointer == NULL)
 	{
-		FatalError("No room!!");
-		return 0;
+		FatalError("Insert failed. No enough room!!");
 	}
 	LastNode = L;
 	while(LastNode->Next != NULL)
@@ -121,32 +117,23 @@ Insert(List L, ElementType value)
 	TmpPointer->Next = NULL;
 	LastNode->Next = TmpPointer;
 	L->Value += 1;
-	return 1;
 }
 
 // Insert a Array after all elements
-int
+void
 InsertArray(List L, ElementType *array, int length)
 {
 	for(int i = 0; i < length; ++i)
-		if (!Insert(L, *(array+i)))
-		{
-			FatalError("No Enough room!!");
-			printf("Inserted %d values", i + 1);
-			return 0;
-		}
-	return 1;
+		Insert(L, *(array+i));
 }
 
 // Insert a Value at the index you give
-int
+void
 InsertAt(List L, int index, ElementType value)
 {
 	if (index > L->Value)
 	{
-		FatalError("Sorry!"); 
-		printf("There're just %d elements.", L->Value);
-		return 0;
+		FatalError("Sorry! Wrong index!!"); 
 	}
 	if (index == L->Value)
 	{
@@ -155,8 +142,7 @@ InsertAt(List L, int index, ElementType value)
 	PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
 	if (NewNode == NULL)
 	{
-		FatalError("No room!");
-		return 0;
+		FatalError("No Enough room!");
 	}
 	NewNode->Value = value;
 	Position TmpPointer;
@@ -170,18 +156,17 @@ InsertAt(List L, int index, ElementType value)
 	NewNode->Next = TmpPointer->Next;
 	TmpPointer->Next = NewNode;
 	L->Value += 1;
-	return 1;
 }
 
 // Insert a value before the index you give
-int
+void
 InsertBefore(List L, int index, ElementType value)
 {
 	InsertAt(L, index - 1, value);
 }
 
 // Insert a value after the index you give
-int
+void
 InsertAfter(List L, int index, ElementType value)
 {
 	InsertAt(L, index + 1, value);
@@ -217,25 +202,43 @@ TraverseList(List L)
 	printf("\n");
 }
 
+ElementType
+Retrieve(List L, int index)
+{
+	Position TmpPointer;
+	TmpPointer = L->Next;
+	if (index < L->Value)
+	{
+		int i = 1;
+		while (i < index)
+		{
+			TmpPointer = TmpPointer->Next;
+			++i;
+		}
+		return TmpPointer->Value;
+	}
+	FatalError("Sorry! No Enough Nodes");
+}
+
 void
 ListTest()
 {
 	List list = NewList();
-	printf("Is Empty %d:\n", IsEmpty(list));
 	TraverseList(list);
-	printf("Insert Value 1: %d\n", Insert(list, 1));
+	Insert(list, 1);
 	TraverseList(list);
-	printf("Insert Value 25: %d\n", Insert(list, 25));
+	Insert(list, 25);
 	TraverseList(list);
 	int values[5] = {1, 2, 3, 4, 5};
-	printf("Insert Values: %d\n", InsertArray(list, values, 5));
+	InsertArray(list,values, 5);
 	TraverseList(list);
-	printf("Insert At index 3: %d\n", InsertAt(list, 3, 99));
+	InsertAt(list, 3, 99);
 	TraverseList(list);
-	printf("Insert Before index 3: %d\n", InsertBefore(list, 3, 127));
+	InsertBefore(list, 3, 127);
 	TraverseList(list);
-	printf("Insert After index 3: %d\n", InsertAfter(list, 3, 925));
+	InsertAfter(list, 3, 925);
 	TraverseList(list);
-	printf("Insert After index 12: %d\n", InsertAfter(list, 12, 999));
+	// InsertAfter(list, 12, 999);
 	TraverseList(list);
+	Retrieve(list, 9);
 }
