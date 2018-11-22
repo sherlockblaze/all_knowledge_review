@@ -51,12 +51,12 @@
 ***Algorithms***
 
 - [ ] Sorting
+	- [x] [Insertion-Sort](./algorithms/README.md/#insertion-sort)
 	- [ ] Shellsort
 	- [ ] Heapsort
 	- [ ] Mergesort
 	- [ ] Quicksort
 	- [ ] Bucket Sort
-	- [ ] External Sort
 
 ***and so on...***
 

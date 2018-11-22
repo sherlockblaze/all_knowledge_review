@@ -1,1 +1,62 @@
-# Insertion-Sort
+# Algorithms
+
+## Content
+
+- [Insertion-Sort](#Insertion-Sort)
+	- [Pseudocode](#Pseudocode)
+	- [Process](#Process)
+
+## Insertion-Sort
+
+> Know about it by writing CODE.
+> ***Because it's really easy!!!!***
+
+### Pseudocode
+
+```
+for j = 2 to A.length
+	key = A[j]
+	// Insert A[j] into the sorted sequence A[1...j-1]
+	i = j - 1
+	while i > 0 and A[i] > key
+		A[i+1] = A[i]
+		i = i - 1
+	A[i + 1] = key
+```
+
+> Know more by reading the compelete code [here](./insert_sort.h)
+
+### Process
+
+In order to help people who don't know about insertion-sort before. I made this. Let's check.
+
+![step1](../picture/algorithms/insertion-sort/step1)
+
+As we know, we start from the second element. We call it i, the value of i is between 0 and the size of this array or some structure else, the total number of elements. Then we get a key, the value of key is A[i].
+
+![step2](../picture/algorithms/insertion-sort/step2)
+
+Then we put the second pointer points to the element just before i, we call it j, j start from i - 1, end with 0.
+
+![step3](../picture/algorithms/insertion-sort/step3)
+
+If the element is pointed by j is bigger than the pointer i points, they exchange their values.
+
+![step4](../picture/algorithms/insertion-sort/step4)
+
+when j got the end, i plus one, new loop start.
+
+![step5](../picture/algorithms/insertion-sort/step5)
+
+***And so on....***
+
+![step6](../picture/algorithms/insertion-sort/step6)
+
+![step7](../picture/algorithms/insertion-sort/step7)
+
+![step8](../picture/algorithms/insertion-sort/step8)
+
+![step9](../picture/algorithms/insertion-sort/step9)
+
+![step10](../picture/algorithms/insertion-sort/step10)
+

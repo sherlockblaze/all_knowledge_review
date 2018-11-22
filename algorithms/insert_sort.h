@@ -12,6 +12,7 @@ void
 insert_sort(int *p, int length)
 {
 	int key = 0;
+	// start from the second element
 	for (int i = 1; i < length; ++i)
 	{
 		key = p[i];
