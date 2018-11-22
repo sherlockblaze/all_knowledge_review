@@ -24,11 +24,15 @@ Now we can see the operations of LinkedList.
 
 ##### Insert
 
-![Insert](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/insert_operation.png)
+![Insert Step1](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/insert_operation_step1.png)
 
-It's the process of the insert operation.
+It's the first step of the insert operation.
 
-As we can see, we got Node A, B, C, and the C is the newest node we wanna insert into this list. First we make the Next pointer of C equals Next pointer of A, then the C node's Next Pointer points to node B, then we let the A's Next pointer points to our new node C.
+As we can see, we got Node A, B, C, and the C is the newest node we wanna insert into this list. First we make the Next pointer of C equals Next pointer of A, then the C node's Next Pointer points to node B.
+
+second step, we let the A's Next pointer points to our new node C.
+
+![Insert Step2](https://github.com/sherlockblaze/data_structures_review/blob/master/picture/linkedlist/insert_operation_step2.png)
 
 Finally, we finished it.
 
