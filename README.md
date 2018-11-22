@@ -1,9 +1,9 @@
 ## Contents
 - [Environment](#Environment)
 - [Wishlist](#Wishlist)
-    - [Data Structures](#Data Structures)
-    - [Machine Learning](#Machine Learning)
-    - [Deep Learning](#Deep Learning)
+    - [Data Structures](#Data-Structures)
+    - [Machine Learning](#Machine-Learning)
+    - [Deep Learning](#Deep-Learning)
 - [Schedule](#schedule)
 
 # data_structures_review
@@ -14,9 +14,11 @@
 
 ## Wishlist
 
-### Data Structures(***The following content is not the whole content, continues to supplement***)
+### Data Structures
 
-- [x] List
+> ***The following content is not the whole content, continues to supplement***
+
+- [ ] List
 	- [x] LinkedList
 	- [ ] ArrayList
 	- [ ] DoublyLinkedList
