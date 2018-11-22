@@ -1,5 +1,12 @@
 [TOC]
 
+****
+## Contents
+* [LinkedList](#LinkedList)
+    * Operation
+    	* Insert
+    	* Delete
+
 ## List README
 
 ### LinkedList
