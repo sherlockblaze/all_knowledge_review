@@ -7,7 +7,7 @@
 ## Contents
 - [Environment](#Environment)
 - [Wishlist](#Wishlist)
-    - [Data Structures](#Data-Structures-&-Classic-Algorithms)
+    - [Data Structures](data-structures--classic-algorithms)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
 
@@ -57,7 +57,7 @@
 	- [ ] Quicksort
 	- [ ] Bucket Sort
 	- [ ] External Sort
-	
+
 ***and so on...***
 
 ### Machine Learning
