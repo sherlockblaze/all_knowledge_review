@@ -32,7 +32,7 @@
 > ***The following content is not the whole content, continues to supplement***
 
 - [ ] List
-	- [x] LinkedList
+	- [x] [LinkedList](https://github.com/sherlockblaze/data_structures_review/blob/master/lists/README.md#LinkedList)
 	- [ ] ArrayList
 	- [ ] DoublyLinkedList
 - [ ] Stack
