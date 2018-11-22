@@ -1,10 +1,11 @@
 ## Contents
 - [LinkedList](#LinkedList)
-    - [Operations](#Operations)
-    	- [Insert](#Insert)
-    	- [Delete](#Delete)
 
 ### LinkedList
+
+- [Operations](#Operations)
+- [Insert](#Insert)
+- [Delete](#Delete)
 
 Here is the linked list. It looks like this.
 
