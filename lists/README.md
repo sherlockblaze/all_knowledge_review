@@ -4,8 +4,8 @@
 ### LinkedList
 
 - [Operations](#Operations)
-- [Insert](#Insert)
-- [Delete](#Delete)
+	- [Insert](#Insert)
+	- [Delete](#Delete)
 
 Here is the linked list. It looks like this.
 
