@@ -1,13 +1,13 @@
-[TOC]
+LIST
 
-****
 ## Contents
 * [LinkedList](#LinkedList)
     * [Operation](#Operation)
-    	* Insert
-    	* Delete
+    	* [Insert](#Insert)
+    	* [Delete](#Delete)
 
-## List README
+****
+
 
 ### LinkedList
 
