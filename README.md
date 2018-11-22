@@ -58,6 +58,12 @@
 	- [ ] Quicksort
 	- [ ] Bucket Sort
 
+***Knowledge***
+
+- [ ] About Math
+- [ ] About Algorithms
+	- [x] [Loop Invariants](./knowledge/LoopInvariants.md)
+
 ***and so on...***
 
 ### Machine Learning
