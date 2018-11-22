@@ -1,6 +1,6 @@
 ## Contents
 - [LinkedList](#LinkedList)
-    - [Operation](#Operation)
+    - [Operations](#Operations)
     	- [Insert](#Insert)
     	- [Delete](#Delete)
 
@@ -20,7 +20,7 @@ In my version, I put a head node to save the length of the linked list.
 
 Now we can see the operations of LinkedList.
 
-#### Operation
+#### Operations
 
 ##### Insert
 
