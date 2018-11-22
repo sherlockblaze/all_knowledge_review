@@ -4,6 +4,7 @@
 
 
 struct Node;
+
 // Definition
 typedef struct Node *PtrToNode;
 typedef PtrToNode List;
@@ -32,7 +33,7 @@ void ListTest();
 #include <stdio.h>
 #include "../errors/myerror.h"
 
-// Definition of Nodes, Of course you can use different data type.
+// Definition of Nodes,	you can change the definition of ElementyType for changing the type of value.
 struct Node
 {
 	ElementType Value;
