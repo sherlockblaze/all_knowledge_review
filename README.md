@@ -4,11 +4,11 @@
 
 ## Contents
 - [Environment](#Environment)
+- [Schedule](#schedule)
 - [Wishlist](#Wishlist)
     - [Data Structures](#Data-Structures)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
-- [Schedule](#schedule)
 
 ## Environment
 
