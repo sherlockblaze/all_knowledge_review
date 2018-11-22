@@ -1,4 +1,4 @@
-@[TOC](Content)
+[TOC]
 
 # data_structures_review
 

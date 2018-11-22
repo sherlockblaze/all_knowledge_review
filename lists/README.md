@@ -1,3 +1,3 @@
-@[TOC](Content)
+[TOC]
 
 ## List README
