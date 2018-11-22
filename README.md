@@ -8,7 +8,7 @@
 - [Environment](#Environment)
 - [Schedule](#schedule)
 - [Wishlist](#Wishlist)
-    - [Data Structures](#Data-Structures)
+    - [Data Structures](#Data-Structures-&-Classic-Algorithms)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
 
@@ -27,7 +27,7 @@
 
 ## Wishlist
 
-### Data Structures
+### Data Structures & Classic Algorithms
 
 > ***The following content is not the whole content, continues to supplement***
 
@@ -55,6 +55,17 @@
 	- [ ] Binomial Queues
 - [ ] Disjoint Set
 - [ ] Graph
+
+***Algorithms***
+
+- [ ] Sorting
+	- [ ] Shellsort
+	- [ ] Heapsort
+	- [ ] Mergesort
+	- [ ] Quicksort
+	- [ ] Bucket Sort
+	- [ ] External Sort
+***and so on...***
 
 ### Machine Learning
 
