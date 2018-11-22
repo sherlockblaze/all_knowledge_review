@@ -12,9 +12,9 @@
 
 ## Environment
 
-	1. work with c11
-	2. work with c++11
-	3. work with python3.6
+1. work with c11
+2. work with c++11
+3. work with python3.6
 
 ## Wishlist
 
