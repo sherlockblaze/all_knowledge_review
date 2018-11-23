@@ -70,7 +70,7 @@
 
 #### About Algorithms
 
-- [x] [Loop Invariants](./knowledge/LoopInvariants.md/#loop-invariants)
+- [x] [Loop Invariants](./knowledge/algorithms/LoopInvariants.md/#loop-invariants)
 
 ***and so on...***
 
