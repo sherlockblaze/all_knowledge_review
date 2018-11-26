@@ -25,7 +25,7 @@ for j = 2 to A.length
 	A[i + 1] = key
 ```
 
-> Know more by reading the compelete code [here](./insert_sort.h)
+> Know more by reading the compelete code [here](./basic/insert_sort.h)
 
 ### Process
 
