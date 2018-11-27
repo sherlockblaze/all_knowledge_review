@@ -2,9 +2,14 @@
 
 ## Content
 
-- [Insertion-Sort](#Insertion-Sort)
+- [Basic](#Basic)
+	- [Insertion-Sort](#Insertion-Sort)
+- [LeetCode](#LeetCode)
+	- [Two Sum](#Two-Sum)
 
-## Insertion-Sort
+## Basic
+
+### Insertion-Sort
 
 - [Pseudocode](#Pseudocode)
 - [Process](#Process)
@@ -12,7 +17,7 @@
 > Know about it by writing CODE.
 > ***Because it's really easy!!!!***
 
-### Pseudocode
+#### Pseudocode
 
 ```
 for j = 2 to A.length
@@ -27,7 +32,7 @@ for j = 2 to A.length
 
 > Know more by reading the compelete code [here](./basic/insert_sort.h)
 
-### Process
+#### Process
 
 In order to help people who don't know about insertion-sort before. I made this. Let's check.
 
@@ -60,4 +65,10 @@ when j got the end, i plus one, new loop start.
 ![step9](../picture/algorithms/insertion-sort/step9.png)
 
 ![step10](../picture/algorithms/insertion-sort/step10.png)
+
+## LeetCode
+
+### Two Sum
+
+> It's easy to finish, so just read the [code](./leetcode/twosum.h), and I wrote some comments in there.
 

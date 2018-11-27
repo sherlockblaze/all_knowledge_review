@@ -23,8 +23,8 @@ void InsertBefore(List L, int index, ElementType value);
 void InsertAfter(List L, int index, ElementType value);
 void DeleteList(List L);
 ElementType Retrieve(List L, int index);
-void TraverseList(List L);
-void ListTest();
+void Traverse(List L);
+void DoublyLinkedListTest();
 
 #endif /*_DOUBLYLINKEDLIST_H_*/
 
@@ -61,7 +61,7 @@ Insert(List L, ElementType value)
 		TmpPointer = TmpPointer->Next;
 	TmpPointer->Next = NewNode;
 	NewNode->Value = value;
-	NewNode->Next = NULL:
+	NewNode->Next = NULL;
 	NewNode->Previous = TmpPointer;
 	L->Value += 1;
 }
@@ -80,10 +80,10 @@ InsertAt(List L, int index, ElementType value)
 		FatalError("Wrong Place");
 	if (index == L->Value)
 		Insert(L, value);
-	PtrToNode NewNode = (Struct Node *)malloc(sizeof(struct Node));
+	PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
 	if (NewNode == NULL)
 		FatalError("No Enough Room");
-	Position TmpPointer = L;
+	Position TmpPointer = L->Next;
 	int i = 1;
 	while (i < index)
 	{
@@ -97,7 +97,34 @@ InsertAt(List L, int index, ElementType value)
 	L->Value += 1;
 }
 
-List
+void
+InsertBefore(List L, int index, ElementType value)
+{
+	InsertAt(L, index - 1, value);
+}
+
+void
+InsertAfter(List L, int index, ElementType value)
+{
+	InsertAt(L, index + 1, value);
+}
+
+void
+Traverse(List L)
+{
+	if (L == NULL)
+		FatalError("No such Doubly LinkedList");
+	printf("There're %d elements:\n", L->Value);
+	Position TmpPointer = L->Next;
+	while (TmpPointer != NULL)
+	{
+		printf("%d\t", TmpPointer->Value);
+		TmpPointer = TmpPointer->Next;
+	}
+	printf("\n");
+}
+
+int
 IsEmpty(List L)
 {
 
@@ -113,4 +140,40 @@ Position
 Find(List L, ElementType target)
 {
 
+}
+
+void
+DeleteList(List L)
+{
+	Position P, TmpPointer;
+	P = L->Next;
+
+	free(L);
+	while (P != NULL)
+	{
+		TmpPointer = P->Next;
+		free(P);
+		P = TmpPointer;
+	}
+}
+
+void
+DoublyLinkedListTest()
+{
+	List list = NewList();
+	Insert(list, 2);
+	Traverse(list);
+	Insert(list, 3);
+	Traverse(list);
+	InsertAt(list, 1, 4);
+	Traverse(list);
+	InsertBefore(list, 1, 5);
+	Traverse(list);
+	InsertAfter(list, 1, 6);
+	Traverse(list);
+	int array[] = {7, 8, 9, 10, 11, 12};
+	InsertArray(list, array, 6);
+	Traverse(list);
+	DeleteList(list);
+	Traverse(list);
 }

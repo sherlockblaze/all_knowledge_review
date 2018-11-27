@@ -60,6 +60,8 @@
 	- [ ] Mergesort
 	- [ ] Quicksort
 	- [ ] Bucket Sort
+- [ ] LeetCode
+    - [x] [Two Sum](./algorithms/README.md/#Two-Sum)
 
 ### Knowledge
 

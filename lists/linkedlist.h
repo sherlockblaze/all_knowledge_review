@@ -15,7 +15,10 @@ List NewList();
 int IsEmpty(List L);
 ElementType IsLast(Position P);
 Position Find(List L, ElementType target);
-void Delete(List L, ElementType target);
+void Delete(List L);
+void DeleteAt(List L, int index);
+void DeleteFirstTarget(List L, ElementType target);
+void DeleteAllTarget(List L, ElementType target);
 Position FindPrevious(List L, ElementType target);
 void Insert(List L, ElementType value);
 void InsertArray(List L, ElementType *array, int length);
@@ -73,9 +76,42 @@ Find(List L, ElementType target)
 	return P;
 }
 
+// TODO
+void
+Delete(List L)
+{
+	if (L->Next == NULL)
+		printf("Sorry, You didn't insert any node now.");
+	Position P, TmpPointer;
+	P = L->Next;
+	TmpPointer = P;
+	while (P->Next != NULL)
+	{
+		P = P->Next;
+	}
+	free(P);
+}
+
+// Delete the node at the index you give
+void
+DeleteAt(List L, int index)
+{
+	Position P;
+	P = L;
+	int i = 0;
+	while (i++ < index)
+	{
+		P = P->Next;
+	}
+	Position NewNext = P->Next->Next;
+	free(P->Next);
+	P->Next = NewNext;
+	L->Value -= 1;
+}
+
 // Delete a node with value equals target, if you got two same value in a linkedlist, you may just delete the first one.
 void
-Delete(List L, ElementType target)
+DeleteFirstTarget(List L, ElementType target)
 {
 	Position P, TmpPointer;
 	P = FindPrevious(L, target);
@@ -86,6 +122,12 @@ Delete(List L, ElementType target)
 		free(TmpPointer);
 		L->Value -= 1;
 	}
+}
+
+void
+DeleteAllTarget(List L, ElementType target)
+{
+
 }
 
 // Find the node before the node with value equals target, but when you got the value more than one time, you all make a mistake.
@@ -171,7 +213,7 @@ DeleteList(List L)
 	Position P, TmpPointer;
 
 	P = L->Next;
-	L->Next = NULL;
+	free(L);
 	while (P != NULL)
 	{
 		TmpPointer = P->Next;
@@ -184,6 +226,8 @@ DeleteList(List L)
 void
 TraverseList(List L)
 {
+	if (L == NULL)
+		FatalError("No such linkedlist");
 	printf("There're %d elements:\n", L->Value);
 	Position TmpPointer = L->Next;
 	while(TmpPointer != NULL)
@@ -231,6 +275,11 @@ ListTest()
 	InsertAfter(list, 3, 925);
 	TraverseList(list);
 	// InsertAfter(list, 12, 999);
+	Delete(list, 925);
 	TraverseList(list);
-	Retrieve(list, 9);
+	DeleteAt(list, 1);
+	TraverseList(list);
+	DeleteAt(list, 3);
+	TraverseList(list);
+	Retrieve(list, 6);
 }

@@ -15,6 +15,7 @@ return [0, 1].*/
 
 int *twoSum(int* nums, int numsSize, int target);
 int *betterOne(int* nums, int numsSize, int target);
+/*We'll implement this one when we get hashmap*/
 int *bestOne(int* nums, int numsSize, int target);
 void twoSumTest(int *nums, int numsSize, int target);
 
@@ -23,6 +24,7 @@ void twoSumTest(int *nums, int numsSize, int target);
 #include <stdio.h>
 #include <stdlib.h>
 
+// O(n^2)
 int*
 twoSum(int* nums, int numsSize, int target)
 {
@@ -43,7 +45,8 @@ twoSum(int* nums, int numsSize, int target)
 	return result;
 }
 
-int* 
+// Waste too much space, if we got [0, 1000, 1, 441, 1], we need almost 4.2M, if we got bigger number, it'll take much more. But the cost of space is O(n)
+/*int* 
 betterOne(int* nums, int numsSize, int target) {
 	int i, max, min;
 	max = min = nums[0];
@@ -60,6 +63,7 @@ betterOne(int* nums, int numsSize, int target) {
 		int lookfornum = target - nums[i];
 		if (lookfornum < min || lookfornum > max) continue;
 		int dis = lookfornum - min;
+		printf("mapdis= %d\n", map[dis]);
 		if (map[dis])
 		{
 			reval[0] = i;
@@ -70,15 +74,15 @@ betterOne(int* nums, int numsSize, int target) {
 	free(map);
 	printf("in function: %d, %d\n", reval[0], reval[1]);
 	return reval;
-}
+}*/
 
 void
 twoSumTest(int* nums, int numsSize, int target)
 {
 	int* resultOne = twoSum(nums, numsSize, target);
-	int* resultTwo = betterOne(nums, numsSize, target);
+	// int* resultTwo = betterOne(nums, numsSize, target);
 	printf("twoSum result: %d, %d\n", resultOne[0], resultOne[1]);
-	printf("betterOne result: %d, %d\n", resultTwo[0], resultTwo[1]);
+	// printf("betterOne result: %d, %d\n", resultTwo[0], resultTwo[1]);
 	free(resultOne);
-	free(resultTwo);
+	// free(resultTwo);
 }
