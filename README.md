@@ -10,14 +10,16 @@
 
 ## Contents
 - [Environment](#Environment)
-- [Wishlist](#Wishlist)
-    - [Data Structures](#data-structures--classic-algorithms)
+- [Knowledge](#Knowledge)
+	- [Math](#Math)
+	- [English Words](#English-Words)
+    - [Data Structures](#data-structures)
+	- [Algorithms](#Algorithms)
+		- [Classic Algorithms](#Classic-Algorithms)
+		- [LeetCode](#LeetCode)
+		- [Rules](#Rules)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
-- [Knowledge](#Knowledge)
-	- [Math Knowledge](#Math-Knowledge)
-	- [Algorithms Knowledge](#Algorithms-Knowledge)
-	- [English Words](#English-Words)
 
 ## Environment
 
@@ -25,9 +27,15 @@
 2. work with c++11
 3. work with python3.6
 
-## Wishlist
+## Knowledge
 
-### Data Structures & Classic Algorithms
+### Math
+
+- [ ] Math
+
+### [English Words](./knowledge/english/README.md)
+
+### Data Structures
 
 > ***The following content is not the whole content, continues to supplement***
 
@@ -56,32 +64,20 @@
 - [ ] Disjoint Set
 - [ ] Graph
 
-***Algorithms***
+### Algorithms
 
-- [ ] Sorting
-	- [x] [Insertion-Sort](./algorithms/README.md/#insertion-sort)
-	- [ ] Shellsort
-	- [ ] Heapsort
-	- [ ] Mergesort
-	- [ ] Quicksort
-	- [ ] Bucket Sort
+- [] Classic Algorithms
+	- [ ] Sorting
+		- [x] [Insertion-Sort](./algorithms/README.md/#insertion-sort)
+		- [ ] Shellsort
+		- [ ] Heapsort
+		- [ ] Mergesort
+		- [ ] Quicksort
+		- [ ] Bucket Sort
 - [ ] LeetCode
     - [x] [Two Sum](./algorithms/README.md/#Two-Sum)
-
-### Knowledge
-
-#### Math Knowledge
-
-- [ ] Math
-
-
-#### Algorithms Knowledge
-
-- [x] [Loop Invariants](./knowledge/algorithms/LoopInvariants.md/#loop-invariants)
-
-#### [English Words](./knowledge/english/README.md)
-
-***and so on...***
+- [ ] Rules
+    - [x] [Loop Invariants](./knowledge/algorithms/LoopInvariants.md/#loop-invariants)
 
 ### Machine Learning
 
@@ -90,3 +86,5 @@
 ### Deep Learning
 
 ***Waiting... focus on data structures now***
+
+***And so on...***
