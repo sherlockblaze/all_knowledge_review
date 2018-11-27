@@ -66,15 +66,7 @@
 
 ### Algorithms
 
-#### Classic Algorithms
-
-- [ ] Sorting
-	- [x] [Insertion-Sort](./knowledge/algorithms/README.md/#insertion-sort)
-	- [ ] Shellsort
-	- [ ] Heapsort
-	- [ ] Mergesort
-	- [ ] Quicksort
-	- [ ] Bucket Sort
+#### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic)
 
 #### [LeetCode](./knowledge/algorithms/leetcode/doc/README.md#LeetCode)
 
