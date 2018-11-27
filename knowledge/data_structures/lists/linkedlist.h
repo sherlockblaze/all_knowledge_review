@@ -275,7 +275,7 @@ ListTest()
 	InsertAfter(list, 3, 925);
 	TraverseList(list);
 	// InsertAfter(list, 12, 999);
-	Delete(list, 925);
+	Delete(list);
 	TraverseList(list);
 	DeleteAt(list, 1);
 	TraverseList(list);

@@ -18,7 +18,7 @@ We must show three things about a loop invariants.
 
 ### Example
 
-Now Let's learn more about Invariants by talking about [Insertion-Sort](../algorithms/README.md/#insertion-sort) from three things we talk about:
+Now Let's learn more about Invariants by talking about [Insertion-Sort](../README.md/#insertion-sort) from three things we talk about:
 
 1. ***Initalization:*** Before the first loop, we got the A[1]. Moreover, ***this subarray is sorted, which shows that the loop invariant holds prior to the first iteration of the loop.***
 2. ***Maintenance:*** here, we should talk about the second property: showing that each iteration maintains the loop invariant. That's pretty easy. If you got A[1..2], and you must know the subarray consists of the elements originally in A[1...2], and it gets sorted. Moreover, you can know about A[1...3], A[1...4] and so on. So it's true before an iteration of the loop, it remains true before the next iteration. It's Maintenance.

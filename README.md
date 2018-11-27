@@ -40,7 +40,7 @@
 > ***The following content is not the whole content, continues to supplement***
 
 - [ ] List
-	- [x] [LinkedList](https://github.com/sherlockblaze/data_structures_review/blob/master/lists/README.md#LinkedList)
+	- [x] [LinkedList](./knowledge/data_structures/lists/README.md#LinkedList)
 	- [ ] ArrayList
 	- [ ] DoublyLinkedList
 - [ ] Stack
@@ -68,7 +68,7 @@
 
 - [ ] Classic Algorithms
 	- [ ] Sorting
-		- [x] [Insertion-Sort](./algorithms/README.md/#insertion-sort)
+		- [x] [Insertion-Sort](./knowledge/algorithms/README.md/#insertion-sort)
 		- [ ] Shellsort
 		- [ ] Heapsort
 		- [ ] Mergesort
@@ -77,7 +77,7 @@
 - [ ] LeetCode
     - [x] [Two Sum](./algorithms/README.md/#Two-Sum)
 - [ ] Rules
-    - [x] [Loop Invariants](./knowledge/algorithms/LoopInvariants.md/#loop-invariants)
+    - [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md/#loop-invariants)
 
 ### Machine Learning
 
