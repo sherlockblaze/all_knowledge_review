@@ -76,9 +76,7 @@
 	- [ ] Quicksort
 	- [ ] Bucket Sort
 
-#### LeetCode
-
-- [x] [Two Sum](./knowledge/algorithms/README.md/#Two-Sum)
+#### [LeetCode](./knowledge/algorithms/leetcode/doc/README.md#LeetCode)
 
 #### Rules
 
