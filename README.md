@@ -70,7 +70,7 @@
 
 #### [LeetCode](./knowledge/algorithms/leetcode/doc/README.md#LeetCode)
 
-#### Rules
+#### [Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
 
 - [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md/#loop-invariants)
 
