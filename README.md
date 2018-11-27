@@ -66,7 +66,7 @@
 
 ### Algorithms
 
-- [ ] Classic Algorithms
+#### Classic Algorithms
 	- [ ] Sorting
 		- [x] [Insertion-Sort](./knowledge/algorithms/README.md/#insertion-sort)
 		- [ ] Shellsort
@@ -74,9 +74,11 @@
 		- [ ] Mergesort
 		- [ ] Quicksort
 		- [ ] Bucket Sort
-- [ ] LeetCode
+
+#### LeetCode
     - [x] [Two Sum](./algorithms/README.md/#Two-Sum)
-- [ ] Rules
+
+#### Rules
     - [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md/#loop-invariants)
 
 ### Machine Learning

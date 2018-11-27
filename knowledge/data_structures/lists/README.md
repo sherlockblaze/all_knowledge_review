@@ -9,7 +9,7 @@
 
 Here is the linked list. It looks like this.
 
-![LinkedList](../../pictures/data_sturctures/linkedlist/linkedlist.png)
+![LinkedList](../../pictures/data_structures/linkedlist/linkedlist.png)
 
 > In order to avoid the linear cost of insertion and deletion, we need to ensure that the list is not stored contiguously. By using this kind of list, we can make the cost of insertion and deletion be O(1).
 The linked list consists of a series of structures, which are not necessarily adjacent in memory.
