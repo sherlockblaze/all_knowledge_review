@@ -78,7 +78,7 @@
 
 #### LeetCode
 
-- [x] [Two Sum](./algorithms/README.md/#Two-Sum)
+- [x] [Two Sum](./knowledge/algorithms/README.md/#Two-Sum)
 
 #### Rules
 
