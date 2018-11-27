@@ -81,7 +81,7 @@ void
 Delete(List L)
 {
 	if (L == NULL || L->Value == 0)
-		printf("Delete failed. Please try to create a list and insert some nodes into it.");
+		FatalError("Delete failed. Please try to create a list and insert some nodes into it.");
 	Position P, TmpPointer;
 	P = L->Next;
 	while (P->Next != NULL)
