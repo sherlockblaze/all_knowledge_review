@@ -76,19 +76,21 @@ Find(List L, ElementType target)
 	return P;
 }
 
-// TODO
+// Delete the last node of list L
 void
 Delete(List L)
 {
-	if (L->Next == NULL)
-		printf("Sorry, You didn't insert any node now.");
+	if (L == NULL || L->Value == 0)
+		printf("Delete failed. Please try to create a list and insert some nodes into it.");
 	Position P, TmpPointer;
 	P = L->Next;
-	TmpPointer = P;
 	while (P->Next != NULL)
 	{
+		TmpPointer = P;
 		P = P->Next;
 	}
+	TmpPointer->Next = NULL;
+	L->Value -= 1;
 	free(P);
 }
 
@@ -127,6 +129,20 @@ DeleteFirstTarget(List L, ElementType target)
 void
 DeleteAllTarget(List L, ElementType target)
 {
+	Position P, TmpPointer;
+	while (1)
+	{
+		P = FindPrevious(L, target);
+		if (!IsLast(P))
+		{
+			TmpPointer = P->Next;
+			P->Next = TmpPointer->Next;
+			free(TmpPointer);
+			L->Value -= 1;
+		} 
+		else
+			break;
+	}
 
 }
 
@@ -207,6 +223,7 @@ InsertAfter(List L, int index, ElementType value)
 }
 
 // free all nodes, you should keep a pointer point ElementType at next node you wanna free.
+// TODO
 void
 DeleteList(List L)
 {
@@ -220,6 +237,7 @@ DeleteList(List L)
 		free(P);
 		P = TmpPointer;
 	}
+	printf("Delete Successed\n");
 }
 
 // Traverse the list
@@ -259,14 +277,17 @@ Retrieve(List L, int index)
 void
 ListTest()
 {
-	List list = NewList();
+	List list;
+	// list = NULL;
+	// TraverseList(list);
+	list = NewList();
 	TraverseList(list);
 	Insert(list, 1);
 	TraverseList(list);
 	Insert(list, 25);
 	TraverseList(list);
-	int values[5] = {1, 2, 3, 4, 5};
-	InsertArray(list,values, 5);
+	int values1[5] = {1, 2, 3, 4, 5};
+	InsertArray(list,values1, 5);
 	TraverseList(list);
 	InsertAt(list, 3, 99);
 	TraverseList(list);
@@ -281,5 +302,14 @@ ListTest()
 	TraverseList(list);
 	DeleteAt(list, 3);
 	TraverseList(list);
-	Retrieve(list, 6);
+	Retrieve(list, 3);
+	int values2[5] = {7 ,7, 7, 7, 7};
+	InsertArray(list, values2, 5);
+	TraverseList(list);
+	DeleteFirstTarget(list, 7);
+	TraverseList(list);
+	DeleteAllTarget(list, 7);
+	TraverseList(list);
+	DeleteList(list);
+	TraverseList(list);
 }
