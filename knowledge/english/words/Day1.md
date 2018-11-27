@@ -1,4 +1,4 @@
-## Day1
+## 2018 - 11.28 - Day1
 
 - [Part A](#Part-A)
 	- [stock](#stock)
