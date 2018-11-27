@@ -72,8 +72,6 @@
 
 #### [Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
 
-- [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md/#loop-invariants)
-
 ### Machine Learning
 
 ***Waiting... focus on data structures now***
