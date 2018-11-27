@@ -66,7 +66,7 @@
 
 ### Algorithms
 
-- [] Classic Algorithms
+- [ ] Classic Algorithms
 	- [ ] Sorting
 		- [x] [Insertion-Sort](./algorithms/README.md/#insertion-sort)
 		- [ ] Shellsort
