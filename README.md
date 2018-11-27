@@ -11,8 +11,9 @@
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
 - [Knowledge](#Knowledge)
-	- [About Math](#About-Math)
-	- [About Algorithms](#About-Algorithms)
+	- [Math Knowledge](#Math-Knowledge)
+	- [Algorithms Knowledge](#Algorithms-Knowledge)
+	- [English Words](#English-Words)
 
 ## Environment
 
@@ -65,14 +66,18 @@
 
 ### Knowledge
 
-#### About Math
+#### Math Knowledge
 
 - [ ] Math
 
 
-#### About Algorithms
+#### Algorithms Knowledge
 
 - [x] [Loop Invariants](./knowledge/algorithms/LoopInvariants.md/#loop-invariants)
+
+#### [English Words](./knowledge/english/README.md)
+
+**Updating....**
 
 ***and so on...***
 
