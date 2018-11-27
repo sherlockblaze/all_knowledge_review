@@ -77,8 +77,6 @@
 
 #### [English Words](./knowledge/english/README.md)
 
-**Updating....**
-
 ***and so on...***
 
 ### Machine Learning
