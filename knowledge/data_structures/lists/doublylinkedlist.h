@@ -161,7 +161,10 @@ Traverse(List L)
 Position
 FindFirst(List L, ElementType target)
 {
-
+	Position P;
+	P = FindPrevious(L, target);
+	if (!IsLast(P))
+		return P->Next;
 }
 
 void
@@ -194,6 +197,7 @@ DeleteFirstTarget(List L, ElementType target)
 		TmpPointer->Next->Previous = P;
 		P->Next = TmpPointer->Next;
 		free(TmpPointer);
+		L->Value -= 1;
 	}
 }
 
