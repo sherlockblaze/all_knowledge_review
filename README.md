@@ -14,10 +14,9 @@
 	- [Math](#Math)
 	- [English Words](#English-Words)
     - [Data Structures](#data-structures)
-	- [Algorithms](#Algorithms)
-		- [Classic Algorithms](#Classic-Algorithms)
-		- [LeetCode](#LeetCode)
-		- [Rules](#Rules)
+	- [Classic Algorithms](#Classic-Algorithms)
+	- [LeetCode](#LeetCode)
+	- [Algorithms Rules](#Algorithms-Rules)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
 
@@ -29,9 +28,7 @@
 
 ## Knowledge
 
-### Math
-
-- [ ] Math
+### [Math](./knowledge/math/README.md)
 
 ### [English Words](./knowledge/english/README.md)
 
@@ -64,13 +61,11 @@
 - [ ] Disjoint Set
 - [ ] Graph
 
-### Algorithms
+### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic)
 
-#### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic)
+### [LeetCode](./knowledge/algorithms/leetcode/doc/README.md#LeetCode)
 
-#### [LeetCode](./knowledge/algorithms/leetcode/doc/README.md#LeetCode)
-
-#### [Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
+### [Algorithms Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
 
 ### Machine Learning
 
