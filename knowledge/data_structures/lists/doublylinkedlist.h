@@ -13,9 +13,10 @@ typedef PtrToNode Position;
 List NewList();
 int IsEmpty(List L);
 ElementType IsLast(Position P);
-Position Find(List L, ElementType target);
-void Delete(List L, ElementType target);
+Position FindFirst(List L, ElementType target);
 Position FindPrevious(List L, ElementType target);
+void Delete(List L, ElementType target);
+void DeleteFirstTarget(List L, ElementType target);
 void Insert(List L, ElementType value);
 void InsertArray(List L, ElementType *array, int length);
 void InsertAt(List L, int index, ElementType value);
@@ -48,6 +49,39 @@ NewList()
 	list->Next = NULL;
 	list->Previous = NULL;
 	return list;
+}
+
+int
+IsEmpty(List L)
+{
+	return L->Value == 0;
+}
+
+ElementType
+IsLast(Position P)
+{
+	return P->Next == NULL;
+}
+
+Position
+FindFirst(List L, ElementType target)
+{
+	Position P;
+	P = L->Next;
+	while (P != NULL && P->Value != target)
+		P = P->Next;
+	return P;
+}
+
+Position
+FindPrevious(List L, ElementType target)
+{
+	Position P;
+	P = L->Next;
+	while (P->Next != NULL && p->Next->Value != target)
+		P = P->Next;
+
+	return P;
 }
 
 void
@@ -124,24 +158,46 @@ Traverse(List L)
 	printf("\n");
 }
 
-int
-IsEmpty(List L)
-{
-
-}
-
-ElementType
-IsLast(Position P)
-{
-
-}
-
 Position
-Find(List L, ElementType target)
+FindFirst(List L, ElementType target)
 {
 
 }
 
+void
+Delete(List L, ElementType target)
+{
+	if (L == NULL || L->Value == 0)
+		FatalError("Delete Failed. Please try to create a list and insert some nodes into it.");
+	Position P, Previous;
+	P = L->Next;
+	while (P->Next != NULL)
+	{
+		Previous = P;
+		P = P->Next;
+	}
+	Previous->Next = NULL;
+	free(P);
+	L->Value -= 1;
+}
+
+void
+DeleteFirstTarget(List L, ElementType target)
+{
+	Position P, TmpPointer;
+	P = FindPrevious(L, target);
+	if (!IsLast(P))
+	{
+		TmpPointer = P->Next;
+		if (TmpPointer->Next != NULL)
+			Delete(L);
+		TmpPointer->Next->Previous = P;
+		P->Next = TmpPointer->Next;
+		free(TmpPointer);
+	}
+}
+
+// TODO
 void
 DeleteList(List L)
 {
@@ -155,6 +211,18 @@ DeleteList(List L)
 		free(P);
 		P = TmpPointer;
 	}
+	printf("Delete List Successed\n");
+}
+
+ElementType
+Retrieve(List L, int index)
+{
+	Position P;
+	P = L->Next;
+	int i = 0;
+	while (i++ < index)
+		P = P->Next;
+	return P->Value;
 }
 
 void
@@ -174,6 +242,7 @@ DoublyLinkedListTest()
 	int array[] = {7, 8, 9, 10, 11, 12};
 	InsertArray(list, array, 6);
 	Traverse(list);
+	printf("index 2: %d\n", Retrieve(list, 2));
 	DeleteList(list);
-	Traverse(list);
+	// Traverse(list);
 }

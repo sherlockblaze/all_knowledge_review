@@ -14,7 +14,8 @@ typedef PtrToNode Position;
 List NewList();
 int IsEmpty(List L);
 ElementType IsLast(Position P);
-Position Find(List L, ElementType target);
+Position FindFirst(List L, ElementType target);
+Position* FindAll(List L, ElementType target);
 void Delete(List L);
 void DeleteAt(List L, int index);
 void DeleteFirstTarget(List L, ElementType target);
@@ -55,7 +56,7 @@ NewList()
 int
 IsEmpty(List L)
 {
-	return L->Next == NULL;
+	return L->Value == 0;
 }
 
 // Check the node with position P whether is the last node or not
@@ -67,7 +68,7 @@ IsLast(Position P)
 
 // Find the node with value equals target, of course, if you got two same value in a linkedlist, you just get the position of the first one.
 Position
-Find(List L, ElementType target)
+FindFirst(List L, ElementType target)
 {
 	Position P;
 	P = L->Next;
@@ -76,20 +77,28 @@ Find(List L, ElementType target)
 	return P;
 }
 
+// Find All node
+// TODO
+Position*
+FindAll(List L, ElementType target)
+{
+
+}
+
 // Delete the last node of list L
 void
 Delete(List L)
 {
 	if (L == NULL || L->Value == 0)
 		FatalError("Delete failed. Please try to create a list and insert some nodes into it.");
-	Position P, TmpPointer;
+	Position P, Previous;
 	P = L->Next;
 	while (P->Next != NULL)
 	{
-		TmpPointer = P;
+		Previous = P;
 		P = P->Next;
 	}
-	TmpPointer->Next = NULL;
+	Previous->Next = NULL;
 	L->Value -= 1;
 	free(P);
 }
