@@ -38,8 +38,8 @@
 
 - [ ] List
 	- [x] [LinkedList](./knowledge/data_structures/lists/README.md#LinkedList)
-	- [x] [ArrayList](./knowledge/data_structures/lists/README.md#Doubly-LinkedList)
-	- [ ] DoublyLinkedList
+	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/README.md#Doubly-LinkedList)
+	- [ ] ArrayList
 - [ ] Stack
 - [ ] Queue
 - [ ] Tree
