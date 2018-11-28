@@ -113,6 +113,23 @@
 
 ## Part A
 
-### stock
-	
+**All Paraphrase come from [etymonline](https://www.etymonline.com)**
 
+### stock
+
+> **n.**
+
+> 1. Old English stocc "stump, post, stake, tree trunk, log," also "pillory" (usually plural, stocks), from Proto-Germanic *stauk- "tree trunk" (source also of Old Norse stokkr "block of wood, trunk of a tree," Old Saxon, Old Frisian stok, Middle Dutch stoc "tree trunk, stump," Dutch stok "stick, cane," Old High German stoc "tree trunk, stick," German Stock "stick, cane;" also Dutch stuk, German Stück "piece"), from an extended form of PIE root *(s)teu- (1) "to push, stick, knock, beat" (see steep (adj.)).
+Meaning "ancestry, family" (late 14c.) is a figurative use of the "tree trunk" sense (as in family tree). This is also the root of the meaning "heavy part of a tool," and "part of a rifle held against the shoulder" (1540s). Meaning "person as dull and senseless as a block or log" is from c. 1300; hence "a dull recipient of action or notice" (1540s).
+Meaning "framework on which a boat was constructed" (early 15c.) led to figurative phrase on stocks "planned and commenced" (1660s). Taking stock "making an inventory" is attested from 1736. Stock, lock, and barrel "the whole of a thing" is recorded from 1817. Stock-still (late 15c.) is literally "as still as a tree trunk."
+
+> 2. "supply for future use" (early 15c.), "sum of money" (mid-15c.), Middle English developments of stock (n.1), but the ultimate sense connection is uncertain. Perhaps the notion is of the "trunk" from which gains are an outgrowth, or from stock (n.1) in obsolete sense of "money-box" (c. 1400). Meaning "**subscribed capital of a corporation**" is from 1610s.
+In stock "in the possession of a trader" is from 1610s. Meaning "broth made by boiling meat or vegetables" is from 1764. Theatrical use, in reference to a company regularly acting together at a given theater, is attested from 1761. Figurative phrase take stock in "regard as important" is from 1870. As the collective term for the movable property of a farm, it is recorded from 1510s; hence livestock.
+
+> **v.**
+
+> 1. "**to supply (a store) with stock,**" 1620s, from stock (n.2). Meaning "to lay up in store" is from c. 1700. Earliest sense is "to imprison in stocks" (early 14c.). Related: Stocked; stocking.
+
+> **adj.**
+
+> 1. in reference to conversation, literature, "recurring, commonplace" (as in stock phrase), 1738, figurative use from sense "kept in store for constant use" (1620s), from stock (n.2).
