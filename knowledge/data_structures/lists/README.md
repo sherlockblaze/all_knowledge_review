@@ -126,4 +126,4 @@ Then we let the Next pointer of previous node points to the next node of the Tar
 <h5 id="doublylinkedlist_conclusion">Conclusion</h5>
 
 The cost of insertion or deletion still O(1).
-It's just as same as linkedlist -- The standard implementation.
+It's just as same as [linkedlist](#LinkedList) -- The standard implementation.
