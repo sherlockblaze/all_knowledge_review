@@ -9,16 +9,20 @@ typedef struct HeadNode *PtrToHeadNode;
 typedef PtrToHeadNode List;
 
 List NewList();
-List NewListWithLength(int capacity);
+List NewListWithCapacity(int capacity);
 void Insert(List L, ElementType value);
-void InsertAt(List L, int index, ElementType value)
+void InsertAt(List L, int index, ElementType value);
+void InsertArray(List L, ElementType* array, int length);
 void IncreaseCapacity(List L);
+void MoveTheValuesBackwards(List L, int index);
 void TraverseList(List L);
+void DeleteArrayList(Array array, int capacity);
 
 #endif /*_ARRAYLIST_H_*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "../errors/myerror.h"
 
 struct HeadNode
 {
@@ -31,11 +35,11 @@ struct HeadNode
 List
 NewList()
 {
-	return NewListWithLength(10);
+	return NewListWithCapacity(10);
 }
 
 List
-NewListWithLength(int capacity)
+NewListWithCapacity(int capacity)
 {
 	List list;
 	Array array;
@@ -45,7 +49,7 @@ NewListWithLength(int capacity)
 		FatalError("No Enough Room!!");
 	list->ArrayList = array;
 	list->Size = 0;
-	list->Capacity = 10;
+	list->Capacity = capacity;
 	return list;
 }
 
@@ -56,15 +60,44 @@ Insert(List L, ElementType value)
 	if (L->Size >= L->Capacity)
 		IncreaseCapacity(L);
 	array = L->ArrayList;
-	*(array + size) = value;
+	*(array + L->Size) = value;
 	L->Size += 1;
 }
 
 void
 InsertAt(List L, int index, ElementType value)
 {
+	Array array;
+	if (index > L->Size)
+		FatalError("Insert Failed. illegal index.");
+	if (L->Size + 1 > L->Capacity)
+		IncreaseCapacity(L);
+
+	array = L->ArrayList;
 	if (index == L->Size - 1)
-		
+		Insert(L, value);
+	else
+	{
+		MoveTheValuesBackwards(L, index);
+		*(array +  index) = value;
+	}
+	L->Size += 1;
+}
+
+void
+InsertArray(List L, ElementType* array, int length)
+{
+	for (int i = 0; i < length; ++i)
+		Insert(L, *(array + i));
+}
+
+void
+MoveTheValuesBackwards(List L, int index)
+{
+	Array array;
+	array = L->ArrayList;
+	for (int i = L->Size - 1; i > index - 1; --i)
+		*(array + i + 1) = *(array + i);
 }
 
 void 
@@ -80,6 +113,7 @@ IncreaseCapacity(List L)
 	{
 		*(array + i) = *(L->ArrayList + i);
 	}
+	DeleteArrayList(L->ArrayList, L->Capacity);
 	L->ArrayList = array;
 	L->Capacity = NewCapacity;
 }
@@ -93,22 +127,43 @@ TraverseList(List L)
 	printf("\n");
 }
 
+// TODO
+void
+DeleteArrayList(Array array, int capacity)
+{
+	free(array);
+}
+
 void
 ArrayListTest()
 {
 	List list;
 	list = NewList();
-	list->ArrayList[0] = 11;
-	list->ArrayList[1] = 12;
-	list->Size = 2;
+	Insert(list, 1);
+	Insert(list, 2);
 	TraverseList(list);
-	printf("%d\n", list->Capacity);
-	printf("%d\n", list->ArrayList);
-	IncreaseCapacity(list);
+	printf("list1 Before Increase Capacity: %d\n", list->Capacity);
+	printf("list1 Before Increase Arraylist Pointer: %p\n", list->ArrayList);
+	int array[] = {3, 4, 5, 6, 7, 8, 9, 10, 11};
+	InsertArray(list, array, 9);
 	TraverseList(list);
-	printf("%d\n", list->ArrayList);
-	printf("%d\n", list->Capacity);
-	printf("%d\n", list->ArrayList[0]);
-	printf("%d\t%d\t%d\n", sizeof(list), sizeof(int), sizeof(ElementType));
-	IncreaseCapacity(list);
+	
+	printf("\n");
+	printf("list1 After Increase Capacity: %d\n", list->Capacity);
+	printf("list1 After Increase Arraylist Pointer: %p\n", list->ArrayList);
+
+	List list2;
+	list2 = NewListWithCapacity(5);
+	int array2[] = {1, 2, 3, 4, 5};
+	InsertArray(list2, array2, 5);
+	TraverseList(list2);
+	printf("list2 Before InsertAt Capacity: %d\n", list2->Capacity);
+	printf("list2 Before InsertAt Arraylist Pointer: %p\n", list2->ArrayList);
+
+	InsertAt(list2, 2, 6);
+	TraverseList(list2);
+
+	printf("list2 After InsertAt Capacity: %d\n", list2->Capacity);
+	printf("list2 After InsertAt Arraylist Pointer: %p\n", list2->ArrayList);
+
 }
