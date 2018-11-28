@@ -15,7 +15,7 @@ int IsEmpty(List L);
 ElementType IsLast(Position P);
 Position FindFirst(List L, ElementType target);
 Position FindPrevious(List L, ElementType target);
-void Delete(List L, ElementType target);
+void Delete(List L);
 void DeleteFirstTarget(List L, ElementType target);
 void Insert(List L, ElementType value);
 void InsertArray(List L, ElementType *array, int length);
@@ -78,7 +78,7 @@ FindPrevious(List L, ElementType target)
 {
 	Position P;
 	P = L->Next;
-	while (P->Next != NULL && p->Next->Value != target)
+	while (P->Next != NULL && P->Next->Value != target)
 		P = P->Next;
 
 	return P;
@@ -158,28 +158,18 @@ Traverse(List L)
 	printf("\n");
 }
 
-Position
-FindFirst(List L, ElementType target)
-{
-	Position P;
-	P = FindPrevious(L, target);
-	if (!IsLast(P))
-		return P->Next;
-}
-
 void
-Delete(List L, ElementType target)
+Delete(List L)
 {
 	if (L == NULL || L->Value == 0)
 		FatalError("Delete Failed. Please try to create a list and insert some nodes into it.");
-	Position P, Previous;
+	Position P;
 	P = L->Next;
 	while (P->Next != NULL)
 	{
-		Previous = P;
 		P = P->Next;
 	}
-	Previous->Next = NULL;
+	P->Previous->Next = NULL;
 	free(P);
 	L->Value -= 1;
 }
@@ -245,6 +235,8 @@ DoublyLinkedListTest()
 	Traverse(list);
 	int array[] = {7, 8, 9, 10, 11, 12};
 	InsertArray(list, array, 6);
+	Traverse(list);
+	Delete(list);
 	Traverse(list);
 	printf("index 2: %d\n", Retrieve(list, 2));
 	DeleteList(list);

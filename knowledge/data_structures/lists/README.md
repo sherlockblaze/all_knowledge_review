@@ -4,9 +4,10 @@
 
 ### LinkedList
 
-- [Operations](#Operations)
-	- [Insert](#Insert)
-	- [Delete](#Delete)
+- [Operations](#linkedlist_operations)
+	- [Insert](#linkedlist_insert)
+	- [Delete](#linkedlist_delete)
+	- [Conclusion](#linkedlist_conclusion)
 
 Here is the linked list. It looks like this.
 
@@ -22,9 +23,9 @@ In my version, I put a head node to save the length of the linked list.
 
 Now we can see the operations of LinkedList.
 
-#### Operations
+<h4 id="linkedlist_operations">Operations</h4>
 
-##### Insert
+<h5 id="linkedlist_insert">Insert</h5>
 
 ![Insert Step1](../../pictures/data_structures/linkedlist/insert_operation_step1.png)
 
@@ -42,7 +43,7 @@ Finally, we finished it.
 
 ![Insert Successed](../../pictures/data_structures/linkedlist/insert_success.png)
 
-##### Delete
+<h5 id="linkedlist_delete">Delete</h5>
 
 We'll show two steps of delete operation.
 
@@ -58,30 +59,33 @@ Second step, because we just get one Next pointer for each node, so, it just mak
 
 ![Delete Successed](../../pictures/data_structures/linkedlist/delete_success.png)
 
-##### Conclusion
+<h5 id="linkedlist_conclusion">Conclusion</h5>
 
 We know that if you just calculate the cost of insertion or deletion, you'll find T(n) = O(1).
 But you know if we wanna insert or delete a value with speicify index, it'll cost O(n) in whole operation. But the cost of insertion or deletion still is O(1). Here, we just talk aboult the cost of insertion or deleteion.
 
 ### Doubly LinkedList
 
-- [Operations](#Operations)
-	- [Insert](#Insert)
-	- [Delete](#Delete)
+- [Operations](#doublylinkedlist_operations)
+	- [Insert](#doublylinkedlist_insert)
+	- [Delete](#doublylinkedlist_delete)
+	- [Conclusion](#doublylinkedlist_conclusion)
 
-Here is Doubly LinkedList.
+Sometimes it's convenient to traverse lists backwards. We just add an extra field to the data structure, containing a pointer to the previous node.
+
+Here is what Doubly LinkedList looks like.
 
 ![Doubly LinkedList](../../pictures/data_structures/doublylinkedlist/doublylinkedlist.png)
 
 In my version, there's still has a head node of the list, and it's value equals the total number of valid nodes.
 
-![Doubly LinkedList With Head Node](../../picutres/data_structures/doublylinkedlist/doublylinkedlist_with_head.png)
+![Doubly LinkedList With Head Node](../../pictures/data_structures/doublylinkedlist/doublylinkedlist_with_head.png)
 
 Now we can see the basic operations of doubly linkedlist.
 
-#### Operations
+<h4 id="doublylinkedlist_operations">Operations</h4>
 
-##### Insert
+<h5 id="doublylinkedlist_insert">Insert</h5>
 
 ![Insert Step1](../../pictures/data_structures/doublylinkedlist/insert_step1.png)
 
@@ -103,7 +107,7 @@ Now we can let the Previous pointer of NewNode points to the Previous node.
 
 ![Insert Successed](../../pictures/data_structures/doublylinkedlist/insert_successed.png)
 
-##### Delete
+<h5 id="doublylinkedlist_delete">Delete</h5>
 
 First, we call the node we want to delete TargetNode.
 
@@ -118,3 +122,8 @@ Then we let the Next pointer of previous node points to the next node of the Tar
 **Finished!! Just don't forget to free the space of TargetNode.**
 
 ![Delete Successed](../../pictures/data_structures/doublylinkedlist/delete_successed.png)
+
+<h5 id="doublylinkedlist_conclusion">Conclusion</h5>
+
+The cost of insertion or deletion still O(1).
+It's just as same as linkedlist -- The standard implementation.
