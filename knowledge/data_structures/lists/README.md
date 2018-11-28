@@ -5,9 +5,7 @@
 ### LinkedList
 
 - [Operations](#linkedlist_operations)
-	- [Insert](#linkedlist_insert)
-	- [Delete](#linkedlist_delete)
-	- [Conclusion](#linkedlist_conclusion)
+- [Conclusion](#linkedlist_conclusion)
 
 Here is the linked list. It looks like this.
 
@@ -24,6 +22,9 @@ In my version, I put a head node to save the length of the linked list.
 Now we can see the operations of LinkedList.
 
 <h4 id="linkedlist_operations">Operations</h4>
+
+- [Insert](#linkedlist_insert)
+- [Delete](#linkedlist_delete)
 
 <h5 id="linkedlist_insert">Insert</h5>
 
@@ -67,9 +68,7 @@ But you know if we wanna insert or delete a value with speicify index, it'll cos
 ### Doubly LinkedList
 
 - [Operations](#doublylinkedlist_operations)
-	- [Insert](#doublylinkedlist_insert)
-	- [Delete](#doublylinkedlist_delete)
-	- [Conclusion](#doublylinkedlist_conclusion)
+- [Conclusion](#doublylinkedlist_conclusion)
 
 Sometimes it's convenient to traverse lists backwards. We just add an extra field to the data structure, containing a pointer to the previous node.
 
@@ -84,6 +83,9 @@ In my version, there's still has a head node of the list, and it's value equals 
 Now we can see the basic operations of doubly linkedlist.
 
 <h4 id="doublylinkedlist_operations">Operations</h4>
+
+- [Insert](#doublylinkedlist_insert)
+- [Delete](#doublylinkedlist_delete)
 
 <h5 id="doublylinkedlist_insert">Insert</h5>
 
