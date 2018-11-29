@@ -40,7 +40,7 @@
 	- [x] [LinkedList](./knowledge/data_structures/lists/doc/LinkedList.md#LinkedList)
 	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/doc/DoublyLinkedList.md#Doubly-LinkedList)
 	- [x] [ArrayList](./knowledge/data_structures/lists/doc/ArrayList.md#ArrayList)
-- [ ] Stack
+	- [x] [Stack](./knowledge/data_structures/lists/doc/Stack.md#Stack)
 - [ ] Queue
 - [ ] Tree
 	- [ ] Binary Trees
