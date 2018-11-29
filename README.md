@@ -38,7 +38,7 @@
 
 - [ ] List
 	- [x] [LinkedList](./knowledge/data_structures/lists/doc/LinkedList.md#LinkedList)
-	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/doc/LinkedList.md#Doubly-LinkedList)
+	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/doc/DoublyLinkedList.md#Doubly-LinkedList)
 	- [x] [ArrayList](./knowledge/data_structures/lists/doc/ArrayList.md#ArrayList)
 - [ ] Stack
 - [ ] Queue
