@@ -15,6 +15,7 @@ void InsertAt(List L, int index, ElementType value);
 void InsertArray(List L, ElementType* array, int length);
 void Delete(List L);
 void DeleteAt(List L, int index);
+ElementType Retrieve(List L, int index);
 void IncreaseCapacity(List L);
 void MoveTheValuesBackwards(List L, int index);
 void MoveTheValuesForWard(List L, int index);
@@ -110,8 +111,18 @@ DeleteAt(List L, int index)
 	else
 	{
 		MoveTheValuesForWard(L, index);
+		L->Size -= 1;
 	}
-	L->Size -= 1;
+}
+
+ElementType
+Retrieve(List L, int index)
+{
+	Array array;
+	if (index > L->Size)
+		FatalError("Illegal index.");
+	array = L->ArrayList;
+	return array[index];
 }
 
 void
@@ -205,4 +216,5 @@ ArrayListTest()
 	DeleteAt(list2, 2);
 	TraverseList(list2);
 
+	printf("%d\n", Retrieve(list2, 2));
 }
