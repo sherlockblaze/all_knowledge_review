@@ -63,7 +63,7 @@
 
 ### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic)
 
-### [LeetCode](./knowledge/algorithms/leetcode/README.md#LeetCode)
+### LeetCode
 
 - [x] [Two Sum](./knowledge/algorithms/leetcode/doc/TwoSum.md#Two-Sum)
 - [x] [Add Two Numbers](./knowledge/algorithms/leetcode/doc/AddTwoNumbers.md#Add-Two-Numbers)
