@@ -66,7 +66,7 @@
 ### [LeetCode](./knowledge/algorithms/leetcode/README.md#LeetCode)
 
 - [x] [Two Sum](./knowledge/algorithms/leetcode/doc/TwoSum.md#Two-Sum)
-- [x] [Add Two Numbers](./knowledge/algorithms/leetcode/doc/AddTwoNumbers#Add-Two-Numbers)
+- [x] [Add Two Numbers](./knowledge/algorithms/leetcode/doc/AddTwoNumbers.md#Add-Two-Numbers)
 
 ### [Algorithms Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
 
