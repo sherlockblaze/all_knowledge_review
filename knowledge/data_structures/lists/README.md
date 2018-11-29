@@ -1,6 +1,7 @@
 ## Contents
 - [LinkedList](#LinkedList)
 - [Doubly LinkedList](#Doubly-LinkedList)
+- [ArrayList](#ArrayList)
 
 ### LinkedList
 
@@ -129,3 +130,32 @@ Then we let the Next pointer of previous node points to the next node of the Tar
 
 The cost of insertion or deletion still O(1).
 It's just as same as [linkedlist](#LinkedList) -- The standard implementation.
+
+### LinkedList
+
+- [Operations](#arraylist_operations)
+- [Conclusion](#arraylist_conclusion)
+
+<h4 id="arraylist_operations">Operations</h4>
+
+- [Insert](#arraylist_insert)
+- [Delete](#arraylist_delete)
+
+<h5 id="arralylist_insert">Insert</h5>
+
+![Insert Step1](../../pictures/data_structures/arraylist/insert_step1.png)
+![Insert Step2](../../pictures/data_structures/arraylist/insert_step2.png)
+![Insert Successed](../../pictures/data_structures/arraylist/insert_successed.png)
+
+<h5 id="arralylist_delete">Delete</h5>
+
+![Delete Step1](../../pictures/data_structures/arraylist/delete_step1.png)
+![Delete Step2](../../pictures/data_structures/arraylist/delete_step2.png)
+![Delete Successed](../../pictures/data_structures/arraylist/delete_successed.png)
+
+<h5 id="arralylist_conclusion">Conclusion</h5>
+
+![Insert Without Enough Room Step1](../../pictures/data_structures/arraylist/insert_without_enough_room_step1.png)
+![Insert Without Enough Room Step2](../../pictures/data_structures/arraylist/insert_without_enough_room_step2.png)
+![Insert Without Enough Room Step3](../../pictures/data_structures/arraylist/insert_without_enough_room_step3.png)
+![Insert Without Enough Room Success](../../pictures/data_structures/arraylist/insert_without_enough_room_Success.png)
