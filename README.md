@@ -15,7 +15,7 @@
 	- [English Words](#English-Words)
     - [Data Structures](#data-structures)
 	- [Classic Algorithms](#Classic-Algorithms)
-	- [LeetCode](#LeetCode)
+	- [Algorithms Combat](#Algorithms-Combat)
 	- [Algorithms Rules](#Algorithms-Rules)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
@@ -65,10 +65,11 @@
 
 - [x] [Insertion-Sort](./knowledge/algorithms/classic/doc/InsertionSort.md#Insertion-Sort)
 
-### LeetCode
+### Algorithms Combat
 
-- [x] [Two Sum](./knowledge/algorithms/leetcode/doc/TwoSum.md#Two-Sum)
-- [x] [Add Two Numbers](./knowledge/algorithms/leetcode/doc/AddTwoNumbers.md#Add-Two-Numbers)
+- [x] [Two Sum](./knowledge/algorithms/combat/doc/TwoSum.md#Two-Sum)
+- [x] [Add Two Numbers](./knowledge/algorithms/combat/doc/AddTwoNumbers.md#Add-Two-Numbers)
+- [x] [Search In Two Dimensional Array](./knowledge/algorithms/combat/doc/SearchInTwoDimensionalArray.md#Search-In-Two-Dimensional-Array)
 
 ### Algorithms Rules
 
