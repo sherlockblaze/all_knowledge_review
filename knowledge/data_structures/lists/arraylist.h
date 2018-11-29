@@ -13,8 +13,11 @@ List NewListWithCapacity(int capacity);
 void Insert(List L, ElementType value);
 void InsertAt(List L, int index, ElementType value);
 void InsertArray(List L, ElementType* array, int length);
+void Delete(List L);
+void DeleteAt(List L, int index);
 void IncreaseCapacity(List L);
 void MoveTheValuesBackwards(List L, int index);
+void MoveTheValuesForWard(List L, int index);
 void TraverseList(List L);
 void DeleteArrayList(Array array, int capacity);
 
@@ -69,7 +72,7 @@ InsertAt(List L, int index, ElementType value)
 {
 	Array array;
 	if (index > L->Size)
-		FatalError("Insert Failed. illegal index.");
+		FatalError("Insert Failed. Illegal index.");
 	if (L->Size + 1 > L->Capacity)
 		IncreaseCapacity(L);
 
@@ -92,12 +95,43 @@ InsertArray(List L, ElementType* array, int length)
 }
 
 void
+Delete(List L)
+{
+	L->Size -= 1;
+}
+
+void
+DeleteAt(List L, int index)
+{
+	if (index > L->Size)
+		FatalError("Delete Failed. Illegal index.");
+	if (index + 1 == L->Size)
+		Delete(L);
+	else
+	{
+		MoveTheValuesForWard(L, index);
+	}
+	L->Size -= 1;
+}
+
+void
 MoveTheValuesBackwards(List L, int index)
 {
 	Array array;
 	array = L->ArrayList;
 	for (int i = L->Size - 1; i > index - 1; --i)
 		*(array + i + 1) = *(array + i);
+}
+
+void
+MoveTheValuesForWard(List L, int index)
+{
+	Array array;
+	array = L->ArrayList;
+	for (int i = index; i < L->Size - 1; ++i)
+	{
+		*(array + i) = *(array + i + 1);
+	}
 }
 
 void 
@@ -165,5 +199,10 @@ ArrayListTest()
 
 	printf("list2 After InsertAt Capacity: %d\n", list2->Capacity);
 	printf("list2 After InsertAt Arraylist Pointer: %p\n", list2->ArrayList);
+
+	Delete(list2);
+	TraverseList(list2);
+	DeleteAt(list2, 2);
+	TraverseList(list2);
 
 }
