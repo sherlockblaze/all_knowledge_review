@@ -158,4 +158,4 @@ It's just as same as [linkedlist](#LinkedList) -- The standard implementation.
 ![Insert Without Enough Room Step1](../../pictures/data_structures/arraylist/insert_without_enough_room_step1.png)
 ![Insert Without Enough Room Step2](../../pictures/data_structures/arraylist/insert_without_enough_room_step2.png)
 ![Insert Without Enough Room Step3](../../pictures/data_structures/arraylist/insert_without_enough_room_step3.png)
-![Insert Without Enough Room Success](../../pictures/data_structures/arraylist/insert_without_enough_room_Success.png)
+![Insert Without Enough Room Success](../../pictures/data_structures/arraylist/insert_without_enough_room_success.png)
