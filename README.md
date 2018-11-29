@@ -37,9 +37,9 @@
 > ***The following content is not the whole content, continues to supplement***
 
 - [ ] List
-	- [x] [LinkedList](./knowledge/data_structures/lists/doc/README.md#LinkedList)
-	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/doc/README.md#Doubly-LinkedList)
-	- [x] [ArrayList](./knowledge/data_structures/lists/doc/README.md#ArrayList)
+	- [x] [LinkedList](./knowledge/data_structures/lists/doc/LinkedList.md#LinkedList)
+	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/doc/LinkedList.md#Doubly-LinkedList)
+	- [x] [ArrayList](./knowledge/data_structures/lists/doc/ArrayList.md#ArrayList)
 - [ ] Stack
 - [ ] Queue
 - [ ] Tree
