@@ -30,7 +30,7 @@
 
 ### [Math](./knowledge/math/README.md)
 
-### [English Words](./knowledge/english/README.md)
+### [English Words](./knowledge/english/README.md) **Updating**
 
 ### Data Structures
 
@@ -61,9 +61,9 @@
 - [ ] Disjoint Set
 - [ ] Graph
 
-### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic)
+### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic) **Updating**
 
-### [LeetCode](./knowledge/algorithms/leetcode/doc/README.md#LeetCode)
+### [LeetCode](./knowledge/algorithms/leetcode/README.md#LeetCode) **Update Every Day**
 
 ### [Algorithms Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
 
