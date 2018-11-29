@@ -126,6 +126,7 @@ InsertAt(List L, int index, ElementType value)
 	}
 	NewNode->Value = value;
 	NewNode->Next = TmpPointer->Next;
+	NewNode->Next->Previous = NewNode;
 	TmpPointer->Next = NewNode;
 	NewNode->Previous = TmpPointer;
 	L->Value += 1;
