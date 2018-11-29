@@ -42,7 +42,7 @@ In my version, I use the linkedlist as the data structure of it.
 
 ![My Stack](../../../pictures/data_structures/stack/my_stack.png)
 
-For better push of element, I make the head node points to the **Top**, and the last node of this linkedlist called **Bottom**.
+For better push of element, I make the head node points to the **Top**, and the last node of this linkedlist called **Bottom**. If we always insert or delete node at the index 0, we can get a stack.
 
 ![More about My Stack](../../../pictures/data_structures/stack/my_stack_more.png)
 
