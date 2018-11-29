@@ -215,5 +215,5 @@ And we're supposed to remember the cost of insertion and deletion by using linke
 | Implemetion | Delete At Tail | Insert At Tail | Delete At | Insert At | Access At | Access Specified Value |
 | --- | --- | --- | --- | --- | --- | --- |
 | LinkedList | O(1) | O(1) | O(1) | O(1) | O(n) | O(n) |
-| ArrayList | O(1) | O(1) | O(n) | O(n) | O(1) | O(1) |
+| ArrayList | O(1) | O(1) | O(n) | O(n) | O(1) | O(n) |
 
