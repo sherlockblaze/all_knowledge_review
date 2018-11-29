@@ -61,14 +61,20 @@
 - [ ] Disjoint Set
 - [ ] Graph
 
-### [Classic Algorithms](./knowledge/algorithms/classic/doc/README.md#Classic)
+### Classic Algorithms
+
+- [x] [Insertion-Sort](./knowledge/algorithms/classic/doc/InsertionSort.md#Insertion-Sort)
 
 ### LeetCode
 
 - [x] [Two Sum](./knowledge/algorithms/leetcode/doc/TwoSum.md#Two-Sum)
 - [x] [Add Two Numbers](./knowledge/algorithms/leetcode/doc/AddTwoNumbers.md#Add-Two-Numbers)
 
-### [Algorithms Rules](./knowledge/algorithms/rules/README.md#Algorithms-Rules)
+### Algorithms Rules
+
+> **Here is some rules about Algorithms.**
+
+- [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md#Loop-Invariants)
 
 ### Machine Learning
 
