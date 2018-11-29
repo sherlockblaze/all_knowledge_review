@@ -131,7 +131,7 @@ Then we let the Next pointer of previous node points to the next node of the Tar
 The cost of insertion or deletion still O(1).
 It's just as same as [linkedlist](#LinkedList) -- The standard implementation.
 
-### LinkedList
+### ArrayList
 
 - [Operations](#arraylist_operations)
 - [Conclusion](#arraylist_conclusion)
