@@ -217,3 +217,4 @@ And we're supposed to remember the cost of insertion and deletion by using linke
 | LinkedList | O(1) | O(1) | O(1) | O(1) | O(n) | O(n) |
 | ArrayList | O(1) | O(1) | O(n) | O(n) | O(1) | O(n) |
 
+So, just choose the right way to save your data.
