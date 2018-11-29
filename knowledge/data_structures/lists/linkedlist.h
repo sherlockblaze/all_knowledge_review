@@ -34,6 +34,7 @@ void ListTest();
 #endif /* _Linkedlist_H */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "../errors/myerror.h"
 
 // Definition of Nodes,	you can change the definition of ElementyType for changing the type of value.
@@ -171,16 +172,16 @@ FindPrevious(List L, ElementType target)
 void
 Insert(List L, ElementType value)
 {
-	Position TmpPointer, LastNode;
-	TmpPointer = (struct Node *) malloc(sizeof (struct Node));
-	if (TmpPointer == NULL)
+	Position NewNode, LastNode;
+	NewNode = (struct Node *) malloc(sizeof (struct Node));
+	if (NewNode == NULL)
 		FatalError("Insert failed. No enough room!!");
 	LastNode = L;
 	while(LastNode->Next != NULL)
 		LastNode = LastNode->Next;
-	TmpPointer->Value = value;
-	TmpPointer->Next = NULL;
-	LastNode->Next = TmpPointer;
+	NewNode->Value = value;
+	NewNode->Next = NULL;
+	LastNode->Next = NewNode;
 	L->Value += 1;
 }
 
@@ -197,24 +198,25 @@ void
 InsertAt(List L, int index, ElementType value)
 {
 	if (index > L->Value || index < 0)
-		FatalError("Sorry! Wrong index!!"); 
+		FatalError("Illegal index"); 
 	if (index == L->Value)
 		Insert(L, value);
-	PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
-	if (NewNode == NULL)
-		FatalError("No Enough room!");
-	NewNode->Value = value;
-	Position TmpPointer;
-	TmpPointer = L->Next;
-	int i = 1;
-	while (i < index)
-	{
-		TmpPointer = TmpPointer->Next;
-		++i;
+	else {
+		PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
+		if (NewNode == NULL)
+			FatalError("No Enough room!");
+		NewNode->Value = value;
+		Position TmpPointer;
+		TmpPointer = L;
+		int i = 0;
+		while (i++ < index)
+		{
+			TmpPointer = TmpPointer->Next;
+		}
+		NewNode->Next = TmpPointer->Next;
+		TmpPointer->Next = NewNode;
+		L->Value += 1;
 	}
-	NewNode->Next = TmpPointer->Next;
-	TmpPointer->Next = NewNode;
-	L->Value += 1;
 }
 
 // Insert a value before the index you give
@@ -293,18 +295,21 @@ ListTest()
 	TraverseList(list);
 	Insert(list, 1);
 	TraverseList(list);
-	Insert(list, 25);
+	Insert(list, 2);
 	TraverseList(list);
-	int values1[5] = {1, 2, 3, 4, 5};
+	int values1[5] = {3, 4, 5, 6, 7};
 	InsertArray(list,values1, 5);
 	TraverseList(list);
-	InsertAt(list, 3, 99);
+	InsertAt(list, 3, 8);
 	TraverseList(list);
-	InsertBefore(list, 3, 127);
+	InsertBefore(list, 3, 9);
 	TraverseList(list);
-	InsertAfter(list, 3, 925);
+	InsertAfter(list, 3, 10);
 	TraverseList(list);
-	// InsertAfter(list, 12, 999);
+	InsertAt(list, 0, 11);
+	TraverseList(list);
+	InsertAt(list, 0, 12);
+	TraverseList(list);
 	Delete(list);
 	TraverseList(list);
 	DeleteAt(list, 1);
@@ -320,5 +325,4 @@ ListTest()
 	DeleteAllTarget(list, 7);
 	TraverseList(list);
 	DeleteList(list);
-	TraverseList(list);
 }

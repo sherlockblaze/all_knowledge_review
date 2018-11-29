@@ -111,25 +111,27 @@ void
 InsertAt(List L, int index, ElementType value)
 {
 	if (index > L->Value || index < 0)
-		FatalError("Wrong Place");
+		FatalError("Illegal index");
 	if (index == L->Value)
 		Insert(L, value);
-	PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
-	if (NewNode == NULL)
-		FatalError("No Enough Room");
-	Position TmpPointer = L->Next;
-	int i = 1;
-	while (i < index)
+	else
 	{
-		TmpPointer = TmpPointer->Next;
-		++i;
+		PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
+		if (NewNode == NULL)
+			FatalError("No Enough Room");
+		Position TmpPointer = L;
+		int i = 0;
+		while (i++ < index)
+		{
+			TmpPointer = TmpPointer->Next;
+		}
+		NewNode->Value = value;
+		NewNode->Next = TmpPointer->Next;
+		NewNode->Next->Previous = NewNode;
+		TmpPointer->Next = NewNode;
+		NewNode->Previous = TmpPointer;
+		L->Value += 1;
 	}
-	NewNode->Value = value;
-	NewNode->Next = TmpPointer->Next;
-	NewNode->Next->Previous = NewNode;
-	TmpPointer->Next = NewNode;
-	NewNode->Previous = TmpPointer;
-	L->Value += 1;
 }
 
 void
