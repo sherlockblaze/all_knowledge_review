@@ -1,7 +1,7 @@
 #ifndef _ARRAYLIST_H_
 #define _ARRAYLIST_H_
 
-#define ElementType int
+// #define ElementType int
 
 typedef ElementType *PtrToArray;
 typedef PtrToArray Array;
@@ -19,8 +19,6 @@ ElementType Retrieve(List L, int index);
 void IncreaseCapacity(List L);
 void MoveTheValuesBackwards(List L, int index);
 void MoveTheValuesForWard(List L, int index);
-void TraverseList(List L);
-void DeleteArrayList(Array array, int capacity);
 
 #endif /*_ARRAYLIST_H_*/
 
@@ -158,63 +156,6 @@ IncreaseCapacity(List L)
 	{
 		*(array + i) = *(L->ArrayList + i);
 	}
-	DeleteArrayList(L->ArrayList, L->Capacity);
 	L->ArrayList = array;
 	L->Capacity = NewCapacity;
-}
-
-void
-TraverseList(List L)
-{
-	Array array = L->ArrayList;
-	for (int i = 0; i < L->Size; ++i)
-		printf("%d\t", *(array+i));
-	printf("\n");
-}
-
-// TODO
-void
-DeleteArrayList(Array array, int capacity)
-{
-	free(array);
-}
-
-void
-ArrayListTest()
-{
-	List list;
-	list = NewList();
-	Insert(list, 1);
-	Insert(list, 2);
-	TraverseList(list);
-	printf("list1 Before Increase Capacity: %d\n", list->Capacity);
-	printf("list1 Before Increase Arraylist Pointer: %p\n", list->ArrayList);
-	int array[] = {3, 4, 5, 6, 7, 8, 9, 10, 11};
-	InsertArray(list, array, 9);
-	TraverseList(list);
-	
-	printf("\n");
-	printf("list1 After Increase Capacity: %d\n", list->Capacity);
-	printf("list1 After Increase Arraylist Pointer: %p\n", list->ArrayList);
-
-	List list2;
-	list2 = NewListWithCapacity(5);
-	int array2[] = {1, 2, 3, 4, 5};
-	InsertArray(list2, array2, 5);
-	TraverseList(list2);
-	printf("list2 Before InsertAt Capacity: %d\n", list2->Capacity);
-	printf("list2 Before InsertAt Arraylist Pointer: %p\n", list2->ArrayList);
-
-	InsertAt(list2, 2, 6);
-	TraverseList(list2);
-
-	printf("list2 After InsertAt Capacity: %d\n", list2->Capacity);
-	printf("list2 After InsertAt Arraylist Pointer: %p\n", list2->ArrayList);
-
-	Delete(list2);
-	TraverseList(list2);
-	DeleteAt(list2, 2);
-	TraverseList(list2);
-
-	printf("%d\n", Retrieve(list2, 2));
 }
