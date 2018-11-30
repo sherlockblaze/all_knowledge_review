@@ -5,11 +5,11 @@
 
 Now let's talk about arraylist, we know it costs O(n) when you want access a value at the index you give by using a linkedlist, if you want make it faster to finish, you should use arraylist, it cost O(1) when you wanna access the index you want. Because the underlying is an array. So you can access any value at the index you give in one step, just arr[index]. It's pretty cool. Now let me show you what the arraylist look like.
 
-![ArrayList](../../pictures/arraylist/arraylist.png)
+![ArrayList](../../pic/arraylist/arraylist.png)
 
 And in my version, there's still head node here which save the total number of values in the arraylist, the pointer points to the arraylist and the capacity of the arraylist.Let's meet it first.
 
-![Arraylist With HeadNode](../../pictures/arraylist/arraylist_with_head_node.png)
+![Arraylist With HeadNode](../../pic/arraylist/arraylist_with_head_node.png)
 
 ***Let's be clear:***
 

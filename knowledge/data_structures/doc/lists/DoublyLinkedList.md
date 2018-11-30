@@ -7,11 +7,11 @@ Sometimes it's convenient to traverse lists backwards. We just add an extra fiel
 
 Here is what Doubly LinkedList looks like.
 
-![Doubly LinkedList](../../pic/data_structures/doublylinkedlist/doublylinkedlist.png)
+![Doubly LinkedList](../../pic/doublylinkedlist/doublylinkedlist.png)
 
 In my version, there's still has a head node of the list, and it's value equals the total number of valid nodes.
 
-![Doubly LinkedList With Head Node](../../pic/data_structures/doublylinkedlist/doublylinkedlist_with_head.png)
+![Doubly LinkedList With Head Node](../../pic/doublylinkedlist/doublylinkedlist_with_head.png)
 
 Now we can see the basic operations of doubly linkedlist.
 
@@ -61,4 +61,4 @@ Then we let the Next pointer of previous node points to the next node of the Tar
 <h5 id="doublylinkedlist_conclusion">Conclusion</h5>
 
 The cost of insertion or deletion still O(1).
-It's just as same as [linkedlist](#LinkedList) -- The standard implementation.
+It's just as same as [linkedlist](./LinkedList.md#LinkedList) -- The standard implementation.
