@@ -39,10 +39,10 @@
 > ***The following content is not the whole content, continues to supplement***
 
 - [ ] List
-	- [x] [LinkedList](./knowledge/data_structures/lists/doc/LinkedList.md#LinkedList)
-	- [x] [Doubly LinkedList](./knowledge/data_structures/lists/doc/DoublyLinkedList.md#Doubly-LinkedList)
-	- [x] [ArrayList](./knowledge/data_structures/lists/doc/ArrayList.md#ArrayList)
-	- [x] [Stack](./knowledge/data_structures/lists/doc/Stack.md#Stack)
+	- [x] [LinkedList](./knowledge/data_structures/doc/lists/LinkedList.md#LinkedList)
+	- [x] [Doubly LinkedList](./knowledge/data_structures/doc/lists/DoublyLinkedList.md#Doubly-LinkedList)
+	- [x] [ArrayList](./knowledge/data_structures/doc/lists/ArrayList.md#ArrayList)
+	- [x] [Stack](./knowledge/data_structures/doc/lists/Stack.md#Stack)
 - [ ] Queue
 - [ ] Tree
 	- [ ] Binary Trees

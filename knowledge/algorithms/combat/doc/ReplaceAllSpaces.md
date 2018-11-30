@@ -34,32 +34,32 @@ The above string is too long, let us replace it with "a b c". So it's "a b c" no
 
 First we calculate new length of the string. we got "a b c", its length is 6, we all know string in C saved like "a b c\0". The '\0' represents the end of the string. It looks like this.
 
-![Origin String](../../pic/combat/replace_all_space/origin_string.png)
+![Origin String](../pic/replace_all_space/origin_string.png)
 
 Now We need to replace space with "%20", so the new length of the string is 10.
 
-![New String](../../pic/combat/replace_all_space/new_string.png)
+![New String](../pic/replace_all_space/new_string.png)
 
 Then we copy the value be pointed by I to the index pointed by J one by one.
 
-![Step 1](../../pic/combat/replace_all_space/replace_step1.png)
+![Step 1](../pic/replace_all_space/replace_step1.png)
 
-![Step 2](../../pic/combat/replace_all_space/replace_step2.png)
+![Step 2](../pic/replace_all_space/replace_step2.png)
 
 Here is a little different when our pointer I encounters a space.
 
-![Step 3](../../pic/combat/replace_all_space/replace_step3.png)
-![Step 4](../../pic/combat/replace_all_space/replace_step4.png)
+![Step 3](../pic/replace_all_space/replace_step3.png)
+![Step 4](../pic/replace_all_space/replace_step4.png)
 
 We Insert "%20" one by one in reverse order.
 
-![Step 5](../../pic/combat/replace_all_space/replace_step5.png)
+![Step 5](../pic/replace_all_space/replace_step5.png)
 
 When it finished, pointer I move forward for next value.
 
-![Step 6](../../pic/combat/replace_all_space/replace_step6.png)
+![Step 6](../pic/replace_all_space/replace_step6.png)
 
-![Step 7](../../pic/combat/replace_all_space/replace_step7.png)
+![Step 7](../pic/replace_all_space/replace_step7.png)
 
 And findlly we achieve our goal.
 

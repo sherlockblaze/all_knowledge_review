@@ -5,11 +5,11 @@
 
 Now let's talk about arraylist, we know it costs O(n) when you want access a value at the index you give by using a linkedlist, if you want make it faster to finish, you should use arraylist, it cost O(1) when you wanna access the index you want. Because the underlying is an array. So you can access any value at the index you give in one step, just arr[index]. It's pretty cool. Now let me show you what the arraylist look like.
 
-![ArrayList](../../../pictures/data_structures/arraylist/arraylist.png)
+![ArrayList](../../pictures/arraylist/arraylist.png)
 
 And in my version, there's still head node here which save the total number of values in the arraylist, the pointer points to the arraylist and the capacity of the arraylist.Let's meet it first.
 
-![Arraylist With HeadNode](../../../pictures/data_structures/arraylist/arraylist_with_head_node.png)
+![Arraylist With HeadNode](../../pictures/arraylist/arraylist_with_head_node.png)
 
 ***Let's be clear:***
 
@@ -31,14 +31,14 @@ If we wanna insert a value into a arraylist at the tail, that'll be easy, just `
 In this example, we want to insert value 9 at index 2 of the array.
 First step, we should move all the values between index 2 and the end of array one step backward.
 
-![Insert Step1](../../../pictures/data_structures/arraylist/insert_step1.png)
+![Insert Step1](../../pic/arraylist/insert_step1.png)
 
 Second step, we just need to do like this. ```array[2] = 9```
-![Insert Step2](../../../pictures/data_structures/arraylist/insert_step2.png)
+![Insert Step2](../../pic/arraylist/insert_step2.png)
 
 It's finished. Pretty Easy. And it costs O(n). Don't forget to change the value of **Size**, it's supposed to plus one after doing this.
 
-![Insert Successed](../../../pictures/data_structures/arraylist/insert_successed.png)
+![Insert Successed](../../pic/arraylist/insert_successed.png)
 
 **But what happens when you insert an element when you have insufficient capacity?**
 
@@ -46,17 +46,17 @@ Here is the answer.
 
 First step, we get a new capacity called NewCapacity, and ```NewCapacity = OldCapacity / 2 * 3 + OldCapacity``` in my version, you can modify it to your perferred value. Then we get a new array with capacity **NewCapacity**.
 
-![Insert Without Enough Room Step1](../../../pictures/data_structures/arraylist/insert_without_enough_room_step1.png)
+![Insert Without Enough Room Step1](../../pic/arraylist/insert_without_enough_room_step1.png)
 
 Second step we copy the elements of the old array to the new array in order.
 
-![Insert Without Enough Room Step2](../../../pictures/data_structures/arraylist/insert_without_enough_room_step2.png)
+![Insert Without Enough Room Step2](../../pic/arraylist/insert_without_enough_room_step2.png)
 
 Then we can do like inserting with enough room.
 
-![Insert Without Enough Room Step3](../../../pictures/data_structures/arraylist/insert_without_enough_room_step3.png)
+![Insert Without Enough Room Step3](../../pic/arraylist/insert_without_enough_room_step3.png)
 
-![Insert Without Enough Room Success](../../../pictures/data_structures/arraylist/insert_without_enough_room_successed.png)
+![Insert Without Enough Room Success](../../pic/arraylist/insert_without_enough_room_successed.png)
 
 <h5 id="arraylist_delete">Delete</h5>
 
@@ -64,14 +64,14 @@ Then let's talk about deletion of arraylist. Same with insert at the tail, if yo
 
 First Step. Move all the values between index 2 and the end of array one step forward, like this.
 
-![Delete Step1](../../../pictures/data_structures/arraylist/delete_step1.png)
+![Delete Step1](../../pic/arraylist/delete_step1.png)
 
 Then we just do like this. ```L->Size -= 1```. Finished. Easy too, but it's cost O(n) too;
 
-![Delete Step2](../../../pictures/data_structures/arraylist/delete_step2.png)
+![Delete Step2](../../pic/arraylist/delete_step2.png)
 
 **Delete Successed!!!**
-![Delete Successed](../../../pictures/data_structures/arraylist/delete_successed.png)
+![Delete Successed](../../pic/arraylist/delete_successed.png)
 
 <h5 id="arraylist_conclusion">Conclusion</h5>
 

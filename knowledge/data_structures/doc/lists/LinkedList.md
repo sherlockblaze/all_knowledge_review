@@ -5,7 +5,7 @@
 
 Here is the linked list. It looks like this.
 
-![LinkedList](../../../pictures/data_structures/linkedlist/linkedlist.png)
+![LinkedList](../../pic/linkedlist/linkedlist.png)
 
 > In order to avoid the linear cost of insertion and deletion, we need to ensure that the list is not stored contiguously. By using this kind of list, we can make the cost of insertion and deletion be O(1).
 The linked list consists of a series of structures, which are not necessarily adjacent in memory.
@@ -13,7 +13,7 @@ Each node contains the element and a pointer points to the next node, we call it
 
 In my version, I put a head node to save the length of the linked list.
 
-![With Head Node](../../../pictures/data_structures/linkedlist/linkedlist_with_head_node.png)
+![With Head Node](../../pic/linkedlist/linkedlist_with_head_node.png)
 
 Now we can see the operations of LinkedList.
 
@@ -24,7 +24,7 @@ Now we can see the operations of LinkedList.
 
 <h5 id="linkedlist_insert">Insert</h5>
 
-![Insert Step1](../../../pictures/data_structures/linkedlist/insert_operation_step1.png)
+![Insert Step1](../../pic/linkedlist/insert_operation_step1.png)
 
 It's the first step of the insert operation.
 
@@ -32,13 +32,13 @@ As we can see, we got Node A, B, C, and the C is the newest node we wanna insert
 
 second step, we let the A's Next pointer points to our new node C.
 
-![Insert Step2](../../../pictures/data_structures/linkedlist/insert_operation_step2.png)
+![Insert Step2](../../pic/linkedlist/insert_operation_step2.png)
 
 Finally, we finished it.
 
 ***Insert Successed!!***
 
-![Insert Successed](../../../pictures/data_structures/linkedlist/insert_success.png)
+![Insert Successed](../../pic/linkedlist/insert_success.png)
 
 <h5 id="linkedlist_delete">Delete</h5>
 
@@ -46,15 +46,15 @@ We'll show two steps of delete operation.
 
 First step, we let the node A's Next pointer equals the Next pointer of node C.
 
-![Delete Step1](../../../pictures/data_structures/linkedlist/delete_operation_step1.png)
+![Delete Step1](../../pic/linkedlist/delete_operation_step1.png)
 
 Second step, because we just get one Next pointer for each node, so, it just make no pointer points to node C.
 
-![Delete Step2](../../../pictures/data_structures/linkedlist/delete_operation_step2.png)
+![Delete Step2](../../pic/linkedlist/delete_operation_step2.png)
 
 **So delete Successed!!**
 
-![Delete Successed](../../../pictures/data_structures/linkedlist/delete_success.png)
+![Delete Successed](../../pic/linkedlist/delete_success.png)
 
 <h5 id="linkedlist_conclusion">Conclusion</h5>
 
