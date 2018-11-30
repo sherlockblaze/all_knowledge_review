@@ -1,6 +1,6 @@
 #ifndef _LINKEDLIST_H_
 #define _LINKEDLIST_H_
-#define ElementType int
+// #define ElementType int
 
 
 struct Node;
@@ -28,8 +28,6 @@ void InsertBefore(List L, int index, ElementType value);
 void InsertAfter(List L, int index, ElementType value);
 void DeleteList(List L);
 ElementType Retrieve(List L, int index);
-void TraverseList(List L);
-void ListTest();
 
 #endif /* _Linkedlist_H */
 
@@ -251,22 +249,6 @@ DeleteList(List L)
 	printf("Delete Successed\n");
 }
 
-// Traverse the list
-void
-TraverseList(List L)
-{
-	if (L == NULL)
-		FatalError("No such linkedlist");
-	printf("There're %d elements:\n", L->Value);
-	Position TmpPointer = L->Next;
-	while(TmpPointer != NULL)
-	{
-		printf("%d\t", TmpPointer->Value);
-		TmpPointer = TmpPointer->Next;
-	}
-	printf("\n");
-}
-
 ElementType
 Retrieve(List L, int index)
 {
@@ -283,46 +265,4 @@ Retrieve(List L, int index)
 		return TmpPointer->Value;
 	}
 	FatalError("Sorry! No Enough Nodes");
-}
-
-void
-ListTest()
-{
-	List list;
-	// list = NULL;
-	// TraverseList(list);
-	list = NewList();
-	TraverseList(list);
-	Insert(list, 1);
-	TraverseList(list);
-	Insert(list, 2);
-	TraverseList(list);
-	int values1[5] = {3, 4, 5, 6, 7};
-	InsertArray(list,values1, 5);
-	TraverseList(list);
-	InsertAt(list, 3, 8);
-	TraverseList(list);
-	InsertBefore(list, 3, 9);
-	TraverseList(list);
-	InsertAfter(list, 3, 10);
-	TraverseList(list);
-	InsertAt(list, 0, 11);
-	TraverseList(list);
-	InsertAt(list, 0, 12);
-	TraverseList(list);
-	Delete(list);
-	TraverseList(list);
-	DeleteAt(list, 1);
-	TraverseList(list);
-	DeleteAt(list, 3);
-	TraverseList(list);
-	Retrieve(list, 3);
-	int values2[5] = {7 ,7, 7, 7, 7};
-	InsertArray(list, values2, 5);
-	TraverseList(list);
-	DeleteFirstTarget(list, 7);
-	TraverseList(list);
-	DeleteAllTarget(list, 7);
-	TraverseList(list);
-	DeleteList(list);
 }

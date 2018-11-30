@@ -1,19 +1,12 @@
-/*You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
-Example:
-
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807*/
-
 #include "../../data_structures/lists/linkedlist.h"
 
 #ifndef _ADD_TWO_NUMBERS_H_
 #define _ADD_TWO_NUMBERS_H_
 
+#define ElementType int
+
 List addTwoNumbers(List l1, List l2);
+void TraverseList(List L);
 void test();
 
 #endif /*_ADD_TWO_NUMBERS_H_*/
@@ -50,6 +43,21 @@ addTwoNumbers(List l1, List l2)
 			break;
 	}
 	return result;
+}
+
+void
+TraverseList(List L)
+{
+	if (L == NULL)
+		FatalError("No such linkedlist");
+	printf("There're %d elements:\n", L->Value);
+	Position TmpPointer = L->Next;
+	while(TmpPointer != NULL)
+	{
+		printf("%d\t", TmpPointer->Value);
+		TmpPointer = TmpPointer->Next;
+	}
+	printf("\n");
 }
 
 void

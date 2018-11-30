@@ -1,7 +1,7 @@
 #ifndef _STACK_H_
 #define _STACK_H_
 
-#define ElementType int
+// #define ElementType int
 
 #include "./linkedlist.h"
 
@@ -9,8 +9,6 @@ typedef List Stack;
 List NewStack();
 void Push(Stack Stack, ElementType Value);
 ElementType Pop(Stack Stack);
-void CheckValues(Stack Stack);
-void StackTest();
 
 #endif /*_STACK_H_*/
 
@@ -36,21 +34,3 @@ Pop(Stack Stack)
 	DeleteAt(Stack, 0);
 	return Value;
 } 
-
-void
-CheckValues(Stack Stack)
-{
-	TraverseList(Stack);
-}
-
-void
-StackTest()
-{
-	Stack stack;
-	stack = NewStack();
-	Push(stack, 1);
-	Push(stack, 2);
-	CheckValues(stack);
-	printf("pop: %d\n", Pop(stack));
-	CheckValues(stack);
-}

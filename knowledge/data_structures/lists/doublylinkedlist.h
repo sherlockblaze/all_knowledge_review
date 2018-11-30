@@ -1,6 +1,6 @@
 #ifndef _DOUBLYLINKEDLIST_H_
 #define _DOUBLYLINKEDLIST_H_
-#define ElementType int
+// #define ElementType int
 
 struct Node;
 
@@ -24,8 +24,6 @@ void InsertBefore(List L, int index, ElementType value);
 void InsertAfter(List L, int index, ElementType value);
 void DeleteList(List L);
 ElementType Retrieve(List L, int index);
-void Traverse(List L);
-void DoublyLinkedListTest();
 
 #endif /*_DOUBLYLINKEDLIST_H_*/
 
@@ -147,21 +145,6 @@ InsertAfter(List L, int index, ElementType value)
 }
 
 void
-Traverse(List L)
-{
-	if (L == NULL)
-		FatalError("No such Doubly LinkedList");
-	printf("There're %d elements:\n", L->Value);
-	Position TmpPointer = L->Next;
-	while (TmpPointer != NULL)
-	{
-		printf("%d\t", TmpPointer->Value);
-		TmpPointer = TmpPointer->Next;
-	}
-	printf("\n");
-}
-
-void
 Delete(List L)
 {
 	if (L == NULL || L->Value == 0)
@@ -220,28 +203,4 @@ Retrieve(List L, int index)
 	while (i++ < index)
 		P = P->Next;
 	return P->Value;
-}
-
-void
-DoublyLinkedListTest()
-{
-	List list = NewList();
-	Insert(list, 2);
-	Traverse(list);
-	Insert(list, 3);
-	Traverse(list);
-	InsertAt(list, 1, 4);
-	Traverse(list);
-	InsertBefore(list, 1, 5);
-	Traverse(list);
-	InsertAfter(list, 1, 6);
-	Traverse(list);
-	int array[] = {7, 8, 9, 10, 11, 12};
-	InsertArray(list, array, 6);
-	Traverse(list);
-	Delete(list);
-	Traverse(list);
-	printf("index 2: %d\n", Retrieve(list, 2));
-	DeleteList(list);
-	// Traverse(list);
 }
