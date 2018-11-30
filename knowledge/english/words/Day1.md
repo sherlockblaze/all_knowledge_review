@@ -1,4 +1,4 @@
-## 2018-11.28 - Day1
+## First Day Words
 
 - [Part A](#Part-A)
 	- [stock](#stock)

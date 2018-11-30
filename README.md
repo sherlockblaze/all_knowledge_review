@@ -30,7 +30,9 @@
 
 ### [Math](./knowledge/math/README.md)
 
-### [English Words](./knowledge/english/README.md)
+### English Words
+
+- [ ] [DayOne](./knowledge/english/words/Day1.md#First-Day-Words)
 
 ### Data Structures
 
