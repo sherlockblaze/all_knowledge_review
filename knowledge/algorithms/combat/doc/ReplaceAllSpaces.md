@@ -2,13 +2,15 @@
 
 - [Question](#Question)
 - [Though](#Though)
+- [Code](#Code)
 
 ##### Question
 
 Implement a function that replaces each space in the string with "%20".
 For example:
-	**Input**: "Sherlock Blaze is the most handsome boy in this world"
-	**Output**: "Sherlock%20Blaze%20is%20the%20most%20handsome%20boy%20in%20this%20world"
+
+**Input**: "Sherlock Blaze is the most handsome boy in this world"
+**Output**: "Sherlock%20Blaze%20is%20the%20most%20handsome%20boy%20in%20this%20world"
 
 ##### Though
 
@@ -60,3 +62,7 @@ When it finished, pointer I move forward for next value.
 ![Step 7](../../pic/combat/replace_all_space/replace_step7.png)
 
 And findlly we achieve our goal.
+
+##### Code
+
+[code](../replace_all_spaces.h)

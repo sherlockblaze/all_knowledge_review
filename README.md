@@ -72,6 +72,7 @@
 - [x] [Two Sum](./knowledge/algorithms/combat/doc/TwoSum.md#Two-Sum)
 - [x] [Add Two Numbers](./knowledge/algorithms/combat/doc/AddTwoNumbers.md#Add-Two-Numbers)
 - [x] [Search In Two Dimensional Array](./knowledge/algorithms/combat/doc/SearchInTwoDimensionalArray.md#Search-In-Two-Dimensional-Array)
+- [x] [Replace All Spaces](./knowledge/algorithms/combat/doc/ReplaceAllSpaces.md#Replace-All-Spaces)
 
 ### Algorithms Rules
 
