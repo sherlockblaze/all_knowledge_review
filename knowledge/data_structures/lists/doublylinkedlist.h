@@ -169,8 +169,7 @@ DeleteFirstTarget(List L, ElementType target)
 	{
 		TmpPointer = P->Next;
 		if (TmpPointer->Next != NULL)
-			Delete(L);
-		TmpPointer->Next->Previous = P;
+			TmpPointer->Next->Previous = P;
 		P->Next = TmpPointer->Next;
 		free(TmpPointer);
 		L->Value -= 1;
