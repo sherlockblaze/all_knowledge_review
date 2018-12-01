@@ -73,6 +73,7 @@
 - [x] [Add Two Numbers](./knowledge/algorithms/combat/doc/AddTwoNumbers.md#Add-Two-Numbers)
 - [x] [Search In Two Dimensional Array](./knowledge/algorithms/combat/doc/SearchInTwoDimensionalArray.md#Search-In-Two-Dimensional-Array)
 - [x] [Replace All Spaces](./knowledge/algorithms/combat/doc/ReplaceAllSpaces.md#Replace-All-Spaces)
+- [x] [Reverse Print List](./knowledge/algorithms/combat/doc/ReversePrintList.md#Reverse-Print-List)
 
 ### Algorithms Rules
 
