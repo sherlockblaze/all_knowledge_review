@@ -1,4 +1,4 @@
-### Reverse print list
+### Reverse Print List
 
 - [Question](#Question)
 - [Though](#Though)
