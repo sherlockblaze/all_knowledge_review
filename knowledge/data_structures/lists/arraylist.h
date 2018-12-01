@@ -76,7 +76,7 @@ InsertAt(List L, int index, ElementType value)
 		IncreaseCapacity(L);
 
 	array = L->ArrayList;
-	if (index == L->Size - 1)
+	if (index == L->Size)
 		Insert(L, value);
 	else
 	{
