@@ -1,5 +1,7 @@
 ### Trees
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 - [Basic concept of tree](#Basic-Concept-Of-Tree)
 - [How to Implement a Tree](How-to-implement-a-Tree)
 - [Tree Traversals with an Application](Tree-Traversals-with-an-Application)

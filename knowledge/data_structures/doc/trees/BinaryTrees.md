@@ -1,5 +1,7 @@
 ### Binary Trees
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 - [Definitions](#Definitions)
 - [Operations](#Operations)
     - [Traverse](#Traverse)
@@ -35,7 +37,7 @@ We just talk about traverse of a binary tree here. And we'll do more, for exampl
 
 We have three ways of traversing.
 
-**<font color="red">inorder traversal</font>**:  ***[left, node, right]***. Means we traverse the left child of a node first, then itself, finally  its right child. We do it for all nodes in the same tree until the traverse finish. ***Similar below***.
+**<font color="red">inorder traversal</font>**: ***[left, node, right]***. Means we traverse the left child of a node first, then itself, finally  its right child. We do it for all nodes in the same tree until the traverse finish. ***Similar below***.
 
 **<font color="red">postorder traversal</font>**: ***[left, right, node]***
 
