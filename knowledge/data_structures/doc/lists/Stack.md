@@ -3,7 +3,7 @@
 - [Operations](#Operations)
 - [Conclusion](#Conclusion)
 
-A stack is a list with the restriction that insertinos and deletions can be performed in only one position. We call this behavior last in first out(**lifo**), and the position, we call it **top**, top of a stack.
+A stack is a list with the restriction that insertions and deletions can be performed in only one position. We call this behavior last in first out(**LIFO**), and the position, we call it **top**, top of a stack.
 
 Those Pictures shows a stack can be.
 
