@@ -12,7 +12,7 @@
 - [Environment](#Environment)
 - [Knowledge](#Knowledge)
 	- [Math](#Math)
-	- [English Words](#English-Words)
+	- [English](#English)
     - [Data Structures](#data-structures)
 	- [Classic Algorithms](#Classic-Algorithms)
 	- [Algorithms Combat](#Algorithms-Combat)
@@ -30,7 +30,9 @@
 
 ### [Math](./knowledge/math/README.md)
 
-### English Words
+### English
+
+#### Words
 
 - [ ] [DayOne](./knowledge/english/words/Day1.md#First-Day-Words)
 
