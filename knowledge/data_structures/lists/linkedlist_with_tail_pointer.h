@@ -98,7 +98,6 @@ Delete(List L)
 	{
 		L->Head = NULL;
 		L->Tail = NULL;
-		free(P);
 	}
 	else
 	{
@@ -110,8 +109,8 @@ Delete(List L)
 		Previous->Next = NULL;
 		L->Size -= 1;
 		L->Tail = Previous;
-		free(P);
 	}
+	free(P);
 }
 
 // Delete the node at the index you give

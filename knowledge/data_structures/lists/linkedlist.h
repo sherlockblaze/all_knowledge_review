@@ -7,7 +7,8 @@ struct Node;
 
 // Definition
 typedef struct Node *PtrToNode;
-typedef PtrToNode List;
+typedef struct HeadNode *PtrToHead;
+typedef PtrToHead List;
 typedef PtrToNode Position;
 
 // Operation
@@ -15,7 +16,6 @@ List NewList();
 int IsEmpty(List L);
 ElementType IsLast(Position P);
 Position FindFirst(List L, ElementType target);
-Position* FindAll(List L, ElementType target);
 void Delete(List L);
 void DeleteAt(List L, int index);
 void DeleteFirstTarget(List L, ElementType target);
@@ -29,13 +29,20 @@ void InsertAfter(List L, int index, ElementType value);
 void DeleteList(List L);
 ElementType Retrieve(List L, int index);
 
-#endif /* _Linkedlist_H */
+
+#endif /* _LINKEDLIST_H_ */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "../errors/myerror.h"
 
 // Definition of Nodes,	you can change the definition of ElementyType for changing the type of value.
+struct HeadNode
+{
+	int Size;
+	Position Head;
+};
+
 struct Node
 {
 	ElementType Value;
@@ -45,9 +52,9 @@ struct Node
 List
 NewList()
 {
-	List list = (struct Node *)malloc(sizeof(struct Node));
-	list->Value = 0;
-	list->Next = NULL;
+	List list = (struct HeadNode *) malloc(sizeof(struct Node));
+	list->Size= 0;
+	list->Head= NULL;
 	return list;
 }
 
@@ -55,7 +62,7 @@ NewList()
 int
 IsEmpty(List L)
 {
-	return L->Value == 0;
+	return L->Size == 0;
 }
 
 // Check the node with position P whether is the last node or not
@@ -70,35 +77,34 @@ Position
 FindFirst(List L, ElementType target)
 {
 	Position P;
-	P = L->Next;
+	P = L->Head;
 	while (P != NULL && P->Value!= target)
 		P = P->Next;
 	return P;
-}
-
-// Find All node
-// TODO
-Position*
-FindAll(List L, ElementType target)
-{
-
 }
 
 // Delete the last node of list L
 void
 Delete(List L)
 {
-	if (L == NULL || L->Value == 0)
+	if (L == NULL || L->Size == 0)
 		FatalError("Delete failed. Please try to create a list and insert some nodes into it.");
 	Position P, Previous;
-	P = L->Next;
-	while (P->Next != NULL)
+	P = L->Head;
+	if (L->Size == 1)
 	{
-		Previous = P;
-		P = P->Next;
+		L->Head = NULL;
 	}
-	Previous->Next = NULL;
-	L->Value -= 1;
+	else
+	{
+		while (P->Next != NULL)
+		{
+			Previous = P;
+			P = P->Next;
+		}
+		Previous->Next = NULL;
+		L->Size -= 1;
+	}
 	free(P);
 }
 
@@ -106,17 +112,26 @@ Delete(List L)
 void
 DeleteAt(List L, int index)
 {
-	Position P;
-	P = L;
-	int i = 0;
-	while (i++ < index)
+	if (index > L->Size - 1)
+		FatalError("Illegal index");
+	Position P, NewNext;
+	P = L->Head;
+	if (index == 0)
 	{
-		P = P->Next;
+		NewNext = P->Next;
+		L->Head = NewNext;
+		free(P);
 	}
-	Position NewNext = P->Next->Next;
-	free(P->Next);
-	P->Next = NewNext;
-	L->Value -= 1;
+	else
+	{
+		int i = 0;
+		while (++i < index)
+			P = P->Next;
+		NewNext = P->Next->Next;
+		free(P->Next);
+		P->Next = NewNext;
+	}
+	L->Size -= 1;
 }
 
 // Delete a node with value equals target, if you got two same value in a linkedlist, you may just delete the first one.
@@ -124,13 +139,19 @@ void
 DeleteFirstTarget(List L, ElementType target)
 {
 	Position P, TmpPointer;
-	P = FindPrevious(L, target);
-	if (!IsLast(P))
+	P = L->Head;
+	if (P != NULL && P->Value == target)
+		DeleteAt(L, 0);
+	else
 	{
-		TmpPointer = P->Next;
-		P->Next = TmpPointer->Next;
-		free(TmpPointer);
-		L->Value -= 1;
+		P = FindPrevious(L, target);
+		if (!IsLast(P))
+		{
+			TmpPointer = P->Next;
+			P->Next = TmpPointer->Next;
+			free(TmpPointer);
+			L->Size -= 1;
+		}
 	}
 }
 
@@ -140,16 +161,21 @@ DeleteAllTarget(List L, ElementType target)
 	Position P, TmpPointer;
 	while (1)
 	{
-		P = FindPrevious(L, target);
-		if (!IsLast(P))
-		{
-			TmpPointer = P->Next;
-			P->Next = TmpPointer->Next;
-			free(TmpPointer);
-			L->Value -= 1;
-		} 
+		if (L->Head->Value == target)
+			DeleteAt(L, 0);
 		else
-			break;
+		{
+			P = FindPrevious(L, target);
+			if (!IsLast(P))
+			{
+				TmpPointer = P->Next;
+				P->Next = TmpPointer->Next;
+				free(TmpPointer);
+				L->Size -= 1;
+			} 
+			else
+				break;
+		}
 	}
 
 }
@@ -159,9 +185,10 @@ Position
 FindPrevious(List L, ElementType target)
 {
 	Position P;
-	P = L;
-	while (P->Next != NULL && P->Next->Value != target)
-		P = P->Next;
+	P = L->Head;
+	if (L->Head != NULL)
+		while (P->Next != NULL && P->Next->Value != target)
+			P = P->Next;
 
 	return P;
 }
@@ -174,13 +201,18 @@ Insert(List L, ElementType value)
 	NewNode = (struct Node *) malloc(sizeof (struct Node));
 	if (NewNode == NULL)
 		FatalError("Insert failed. No enough room!!");
-	LastNode = L;
-	while(LastNode->Next != NULL)
-		LastNode = LastNode->Next;
+	LastNode = L->Head;
 	NewNode->Value = value;
 	NewNode->Next = NULL;
-	LastNode->Next = NewNode;
-	L->Value += 1;
+	if (LastNode == NULL)
+		L->Head = NewNode;
+	else
+	{
+		while(LastNode->Next != NULL)
+			LastNode = LastNode->Next;
+		LastNode->Next = NewNode;
+	}
+	L->Size += 1;
 }
 
 // Insert a Array after all elements
@@ -195,9 +227,9 @@ InsertArray(List L, ElementType *array, int length)
 void
 InsertAt(List L, int index, ElementType value)
 {
-	if (index > L->Value || index < 0)
+	if (index > L->Size || index < 0)
 		FatalError("Illegal index"); 
-	if (index == L->Value)
+	if (index == L->Size)
 		Insert(L, value);
 	else {
 		PtrToNode NewNode = (struct Node *)malloc(sizeof(struct Node));
@@ -205,15 +237,23 @@ InsertAt(List L, int index, ElementType value)
 			FatalError("No Enough room!");
 		NewNode->Value = value;
 		Position TmpPointer;
-		TmpPointer = L;
-		int i = 0;
-		while (i++ < index)
+		TmpPointer = L->Head;
+		if (index == 0)
 		{
-			TmpPointer = TmpPointer->Next;
+			NewNode->Next = L->Head;
+			L->Head = NewNode;
 		}
-		NewNode->Next = TmpPointer->Next;
-		TmpPointer->Next = NewNode;
-		L->Value += 1;
+		else
+		{
+			int i = 0;
+			while (++i < index)
+			{
+				TmpPointer = TmpPointer->Next;
+			}
+			NewNode->Next = TmpPointer->Next;
+			TmpPointer->Next = NewNode;
+		}
+		L->Size += 1;
 	}
 }
 
@@ -238,7 +278,7 @@ DeleteList(List L)
 {
 	Position P, TmpPointer;
 
-	P = L->Next;
+	P = L->Head;
 	free(L);
 	while (P != NULL)
 	{
@@ -253,15 +293,12 @@ ElementType
 Retrieve(List L, int index)
 {
 	Position TmpPointer;
-	TmpPointer = L->Next;
-	if (index < L->Value)
+	TmpPointer = L->Head;
+	if (index < L->Size)
 	{
-		int i = 1;
-		while (i < index)
-		{
+		int i = 0;
+		while (i++ < index)
 			TmpPointer = TmpPointer->Next;
-			++i;
-		}
 		return TmpPointer->Value;
 	}
 	FatalError("Sorry! No Enough Nodes");
