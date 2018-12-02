@@ -24,15 +24,15 @@ From the recursive definition, we find that a tree is a collection of N nodes, o
 
 **Leaves**: Nodes without no children are known as leaves.
 
-A **path** from node n1 to nk is defined as as sequence of nodes n1, n2,....,nk, and ni is the parent of n(i+1) for 1 <= i <= k. The **length of this path is the number of edges on the path.**
+A **path** from node $n_1$ to $n_k$ is defined as as sequence of nodes $n_1$, $n_2$,....,$n_k$, and $n_i$ is the parent of $n_{i+1}$ for 1 <= i <= k. The **length of this path is the number of edges on the path.**
 
 There is a path of length zero from every node to itself. Notice that **in a tree there is exactly one path from the root to each node.**
 
-**depth**: For any node ni ,the depth of ni is the length of the unique path from the root to ni.
+**depth**: For any node $n_i$ ,the depth of $n_i$ is the length of the unique path from the root to $n_i$.
 
-**hight**: The height of ni is the length of the longest path from ni to a leaf.
+**hight**: The height of $n_i$ is the length of the longest path from $n_i$ to a leaf.
 
-If there is a path from n1 to n2, then n1 is an ancestor of n2, n2 is a descendant of n1. If n1 != n2 , then n1 is a **proper ancestor** of n2 and n2 is a **proper descendant** of n1.
+If there is a path from $n_1$ to $n_2$, then $n_1$ is an ancestor of $n_2$, $n_2$ is a descendant of $n_1$. If $n_1$ $\neq$ $n_2$ , then $n_1$ is a **proper ancestor** of $n_2$ and $n_2$ is a **proper descendant** of $n_1$.
 
 #### How to implement a Tree
 

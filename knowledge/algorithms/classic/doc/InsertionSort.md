@@ -19,7 +19,7 @@ for j = 2 to A.length
 	A[i + 1] = key
 ```
 
-> Know more by reading the compelete code [here](./classic/insert_sort.h)
+> Know more by reading the compelete code [here](../insert_sort.h)
 
 #### Process
 
@@ -54,3 +54,4 @@ when j got the end, i plus one, new loop start.
 ![step9](../pic/classic/insertion-sort/step9.png)
 
 ![step10](../pic/classic/insertion-sort/step10.png)
+
