@@ -1,4 +1,4 @@
-### Tree
+### Trees
 
 - [Basic concept of tree](#Basic-Concept-Of-Tree)
 - [How to Implement a Tree](How-to-implement-a-Tree)

@@ -46,8 +46,8 @@
 	- [x] [ArrayList](./knowledge/data_structures/doc/lists/ArrayList.md#ArrayList)
 	- [x] [Stack](./knowledge/data_structures/doc/lists/Stack.md#Stack)
 	- [ ] [Queue](./knowledge/data_structures/doc/lists/Queue.md#Queue)
-- [ ] Tree
-	- [ ] Binary Trees
+- [ ] [Trees](./knowledge/data_structures/doc/trees/Trees.md#Trees)
+	- [ ] [Binary Trees](./knowledge/data_structures/doc/trees/BinaryTrees.md#Binary-Trees)
 	- [ ] Search Tree - Binary Search Tree
 	- [ ] AVL Trees
 	- [ ] Splay Trees
@@ -92,3 +92,4 @@
 ***Waiting... focus on data structures now***
 
 ***And so on...***
+
