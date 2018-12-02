@@ -89,3 +89,5 @@ ListDirectory(DirectoryOrFile D)
 
 And we'll do more in our [code](../../trees/trees.h).
 
+![](http://chart.googleapis.com/chart?cht=tx&chl= $n_1$)
+
