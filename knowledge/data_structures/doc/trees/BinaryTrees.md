@@ -1,7 +1,5 @@
 ### Binary Trees
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 - [Definitions](#Definitions)
 - [Operations](#Operations)
     - [Traverse](#Traverse)
@@ -27,7 +25,7 @@ A property of a binary tree that is sometimes important is that the depth of an 
 
 It's the worst situation above. It becomes a linked list already. That's not what we want.
 
-And an analysis shows that the average depth is O($\sqrt{N}$), and that for a special type of binary tree, namely <font color="green">binary search tree.</font> The average value of the depth is O(logN).
+And an analysis shows that the average depth is O(<img src="http://chart.googleapis.com/chart?cht=tx&chl= $\sqrt{N}$" style="border:none;">), and that for a special type of binary tree, namely <font color="green">binary search tree.</font> The average value of the depth is O(logN).
 
 #### Operations
 
