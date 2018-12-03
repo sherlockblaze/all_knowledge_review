@@ -13,7 +13,7 @@
 
 It's look like this.
 
-***<font color="red">No node have more than two children !!!</font>*** 
+***No node have more than two children !!!*** 
 
 > Other than this, there is no more difference with the tree.
 
@@ -25,7 +25,7 @@ A property of a binary tree that is sometimes important is that the depth of an 
 
 It's the worst situation above. It becomes a linked list already. That's not what we want.
 
-And an analysis shows that the average depth is O(<img src="http://chart.googleapis.com/chart?cht=tx&chl= $\sqrt{N}$" style="border:none;">), and that for a special type of binary tree, namely <font color="green">binary search tree.</font> The average value of the depth is O(logN).
+And an analysis shows that the average depth is ![](../../pic/trees/O_N.png), and that for a special type of binary tree, namely ***binary search tree.*** The average value of the depth is O(logN).
 
 #### Operations
 
@@ -35,13 +35,15 @@ We just talk about traverse of a binary tree here. And we'll do more, for exampl
 
 We have three ways of traversing.
 
-**<font color="red">inorder traversal</font>**: ***[left, node, right]***. Means we traverse the left child of a node first, then itself, finally  its right child. We do it for all nodes in the same tree until the traverse finish. ***Similar below***.
+**inorder traversal**: ***[left, node, right]***. 
 
-**<font color="red">postorder traversal</font>**: ***[left, right, node]***
+Means we traverse the left child of a node first, then itself, finally  its right child. We do it for all nodes in the same tree until the traverse finish. ***Similar below***.
 
-**<font color="red">preorder traversal</font>**: ***[node, left, right]***
+**postorder traversal**: ***[left, right, node]***
 
-In fact, we still have a way of traversing: **<font color="red">Hierarchical traversal</font>**. It's from top to bottom, starting from the layer of root node, from left to right, traversing all nodes layer by layer.
+**preorder traversal**: ***[node, left, right]***
+
+In fact, we still have a way of traversing: **Hierarchical traversal**. It's from top to bottom, starting from the layer of root node, from left to right, traversing all nodes layer by layer.
 
 We'll implement those above.
 

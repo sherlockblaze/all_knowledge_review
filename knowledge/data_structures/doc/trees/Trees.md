@@ -24,15 +24,7 @@ From the recursive definition, we find that a tree is a collection of N nodes, o
 
 **Leaves**: Nodes without no children are known as leaves.
 
-A **path** from node <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;"> to <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_k$" style="border:none;"> is defined as as sequence of nodes <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_2$" style="border:none;">,....,<img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_k$" style="border:none;">, and <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_i$" style="border:none;"> is the parent of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_{i+1}$" style="border:none;"> for 1 <= i <= k. The **length of this path is the number of edges on the path.**
-
-There is a path of length zero from every node to itself. Notice that **in a tree there is exactly one path from the root to each node.**
-
-**depth**: For any node <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_i$" style="border:none;"> ,the depth of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_i$" style="border:none;"> is the length of the unique path from the root to <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_i$" style="border:none;">.
-
-**hight**: The height of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_i$" style="border:none;"> is the length of the longest path from <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_i$" style="border:none;"> to a leaf.
-
-If there is a path from <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;"> to <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_2$" style="border:none;">, then <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;"> is an ancestor of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_2$" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_2$" style="border:none;"> is a descendant of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;">. If <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1\neq n_2$" style="border:none;">, then <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;"> is a **proper ancestor** of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_2$" style="border:none;"> and <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_2$" style="border:none;"> is a **proper descendant** of <img src="http://chart.googleapis.com/chart?cht=tx&chl= $n_1$" style="border:none;">.
+![](../../pic/trees/tree_concept.png)
 
 #### How to implement a Tree
 
@@ -89,5 +81,4 @@ ListDirectory(DirectoryOrFile D)
 
 And we'll do more in our [code](../../trees/trees.h).
 
-![](http://chart.googleapis.com/chart?cht=tx&chl=n_1)
 
