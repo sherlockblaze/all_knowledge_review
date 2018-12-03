@@ -133,3 +133,47 @@ In stock "in the possession of a trader" is from 1610s. Meaning "broth made by b
 **adj.**
 
 > 1. in reference to conversation, literature, "recurring, commonplace" (as in stock phrase), 1738, figurative use from sense "kept in store for constant use" (1620s), from stock (n.2).
+
+### adaptation
+
+**n.**
+
+> c.1600, "action of adapting (something to something else)," from French adaptation, from Late Latin adaptationem (nominative adaptatio), noun of action from past-participle stem of adaptare "to adjust," from ad "to" (see ad-) + aptare "to join," from aptus "fitted" (see apt).
+Meaning "**condition of being adapted, state of being fitted to circumstances or relations**" is from 1670s. Sense of "modification of a thing to suit new conditions" is from 1790. **Biological** sense "**variations in a living thing to suit changed conditions**" first recorded 1859 in Darwin's writings.
+
+![](../pic/adaptation.png)
+
+
+### advanced
+
+**adj.**
+
+> **1530s**, "far ahead in the course of actions or ideas, ***being beyond others in attainment, degree, etc.***" past-participle adjective from advance (v.). Of studies, from 1790. Of age, by 1713. In late 19c. **used especially in reference to views on women's equality**
+
+### bound
+
+**v.**
+
+> "to leap, spring upward, jump," 1590s, from Middle French bondir "to rebound, resound, echo," from Old French bondir "to leap, jump, rebound;" originally "make a noise, sound (a horn), beat (a drum)," 13c., ultimately "to echo back," from Vulgar Latin *bombitire "to buzz, hum" (see bomb (n.)), perhaps on model of Old French tentir, from Vulgar Latin *tinnitire.
+
+**v.**
+
+> late 14c., "to form the boundary of," also "to set the boundaries of, confine within limits;" late 15c., "to be a boundary of, abut, adjoin," from bound (n.1). Related: Bounded; bounding.
+
+**n.**
+
+> c. 1300, "boundary marker," from Anglo-Latin bunda, from Old French bonde "limit, boundary, boundary stone" (12c., Modern French borne), variant of bodne, from Medieval Latin bodina, which is perhaps from Gaulish.
+From mid-14c. as "an external limit, that which limits or circumscribes;" figuratively, of feelings, etc., from late 14c. From late 14c. as "limits of an estate or territory." Now chiefly in out of bounds, which originally referred to limits imposed on students at schools; the other senses generally have gone with boundary.
+
+**n.**
+
+> "a leap onward or upward, a springing," 1550s, from bound (v.2).
+
+**adj.**
+
+> "fastened," mid-14c. in figurative sense of "compelled," earlier in fuller form bounden (c. 1300), past-participle adjective from bind (v.). Meaning "under obligation" is from late 15c.; the literal sense "made fast by tying (with fetters, chains, etc.)" is by 1550s. In philology, designating a grammatical element which occurs only in combination with others (opposed to free), from 1926. Smyth has man-bound (1867), of a ship, "detained in port for want of a proper complement of men."
+
+**adj.**
+
+> c. 1200, boun, "ready to go;" hence "going or intending to go" (c. 1400), from Old Norse buinn past participle of bua "to prepare," also "to dwell, to live," from Proto-Germanic *bowan (source also of Old High German buan "to dwell," Old Danish both "dwelling, stall"), from PIE root *bheue- "to be, exist, grow." Final -d is presumably through association with bound (adj.1).
+
