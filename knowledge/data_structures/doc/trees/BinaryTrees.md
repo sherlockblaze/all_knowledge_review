@@ -35,7 +35,7 @@ We just talk about traverse of a binary tree here. And we'll do more, for exampl
 
 We have three ways of traversing.
 
-**inorder traversal**: ___[left, node, right]___. 
+**inorder traversal**: ___[left, node, right]___
 
 Means we traverse the left child of a node first, then itself, finally  its right child. We do it for all nodes in the same tree until the traverse finish. ***Similar below***.
 
