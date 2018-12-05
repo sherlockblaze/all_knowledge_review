@@ -48,7 +48,7 @@
 	- [ ] [Queue](./knowledge/data_structures/doc/lists/Queue.md#Queue)
 - [ ] [Trees](./knowledge/data_structures/doc/trees/Trees.md#Trees)
 	- [ ] [Binary Trees](./knowledge/data_structures/doc/trees/BinaryTrees.md#Binary-Trees)
-	- [ ] Search Tree - Binary Search Tree
+	- [ ] [Search Tree - Binary Search Tree](./knowledge/data_structures/doc/trees/BinarySearchTree.md)
 	- [ ] AVL Trees
 	- [ ] Splay Trees
 	- [ ] B-Trees
@@ -92,3 +92,4 @@
 ***Waiting... focus on data structures now***
 
 ***And so on...***
+
