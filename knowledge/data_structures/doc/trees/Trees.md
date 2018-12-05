@@ -53,7 +53,7 @@ struct TreeNode
 
 #### Tree Traversals with an Application
 
-> All of this comes from book -- **《Data Structures and Algorithms analysis in C.》**
+> All of this comes from the book -- **《Data Structures and Algorithms analysis in C.》**
 
 Trees are powerful. One of the popular uses is the directory structure in man common operating systems, such as UNIX, VAX/VMS and so on.
 
