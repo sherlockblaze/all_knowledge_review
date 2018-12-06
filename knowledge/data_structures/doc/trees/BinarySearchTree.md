@@ -21,6 +21,7 @@ There're two binary tree. But only the left one is binary search tree.
 - [Make Empty](#make-empty)
 - [Find](#find)
 - [Insert](#Insert)
+- [Delete](#Delete)
 
 Now we can define some operations on Binary Search Tree.
 
@@ -44,5 +45,7 @@ But if we do like this, it broke the hope of binary tree -- the average of depth
 
 We'll talk more about this when we learn about [AVL Tree](./AvlTree.md#Avl-Trees).
 
+##### Delete
 
+There's same problem with deletion like insertion.
 
