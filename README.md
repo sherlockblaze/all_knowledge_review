@@ -49,7 +49,7 @@
 - [ ] [Trees](./knowledge/data_structures/doc/trees/Trees.md#Trees)
 	- [ ] [Binary Trees](./knowledge/data_structures/doc/trees/BinaryTrees.md#Binary-Trees)
 	- [ ] [Search Tree - Binary Search Tree](./knowledge/data_structures/doc/trees/BinarySearchTree.md#Binary-Search-Tree)
-	- [ ] [AVL Trees](./knowledge/data_structures/doc/trees/AvlTree.md#AVL-Trees)
+	- [ ] [AVL Trees(Unfinished)](./knowledge/data_structures/doc/trees/AvlTree.md#AVL-Trees)
 	- [ ] Splay Trees
 	- [ ] B-Trees
 	- [ ] Red Black Trees
