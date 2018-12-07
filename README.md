@@ -6,7 +6,7 @@
 
 Not only about the computer science review I go before and not get yet, but also about math, english, physics and so on, everything I got before and not get yet, I'll review here. And it's a long-term battle, the content will be updated everyday. 
 We will:
-+ **Review theoretical knowledge from Monday to Firday, and we will do do some exercises or write code on weekends. If it is a basic subject, we will find some classic and difficult exercises to complete.**
++ **Review theoretical knowledge from Monday to Firday, and we will do some exercises or write code on weekends. If it is a basic subject, we will find some classic and difficult exercises to complete.**
 + **Discuss some classic or excellent projects, such as an operating system, network protocols, Redis, Nginx and so on.**
 + **Do our own actual combat projects, all here, from the beginning。**
 
