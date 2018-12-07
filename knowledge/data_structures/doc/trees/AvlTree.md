@@ -1,5 +1,7 @@
 ## AVL Trees
 
+> **It's a long story.**
+
 - [Definition](#Definition)
 - [Operations](#Operations)
 
@@ -103,5 +105,60 @@ But it's different from a programming perspective.
 
 ###### Single Rotation
 
+Single Rotation is the solution of **Situation One** and **Situation Four**.
+
+![](../../pic/trees/avl_situation1&4_solution.png)
+
+As we can see above, when we insert a node into the left child of the left subtree of the node with value k2, it will break the balance of the tree.
+Now we need to do something now.
+When we finish the insertion, subtree X grown to an extra level, causing it to be exactly two levels deeper than subtree Z.
+
+> There's something we need to notice that **it's a AVL tree before the insertion**. so Subtree Y cannot at the same level as the new X.
+
+In order to rebalance the tree, we would like to **move X up a level** and **Z down a level**.
+
+I quote this sentence from the book, **visualize the tree as being flexible, grab the child node k1, close your eyes, and shake it, letting gravity take hold.**
+
+And it becomes the right tree above.
+
+**Why it works?**
+
+> The binary search tree property tells us that in the original tree k2 > k1, so it can be the right child of k1 in the new tree, and subtree Y, which holds items that are between k1 and k2 in the original tree, can be placed as k2's left child in the new tree and satisfy all the ordering requirements.
+
+**Let us find an example:**
+
+![](../../pic/trees/avl_situation1&4_solution_example.png)
+
+**Through the steps we have described above, we will rebalance the tree when we insert node 1 or node 3 and cause the tree become unbalanced.**
+
+> Now we know how to solve the first situation, In the fourth case, we have already learned that situation one and situation four are mirroring problems. So the steps to solve the problem are just symmetrical.
+
 ###### Double Rotation
+
+**This is for the Second situation and the Third situation.**
+
+> ***Q: We already know how to do a single rotation, but if we do it when we face the second situation and third situation?***
+
+![](../../pic/trees/avl_situation2&3_one_rotation.png)
+
+**It doesn't work!!!**
+
+> **Q: What should we do now?**
+
++ First, we make this become the right one.
+
+![](../../pic/trees/avl_situation2&3_one_rotation_temp.png)
+
++ Then we do some rotations on this tree, actually it's double rotation.
+
+![](../../pic/trees/avl_situation2&3_double_rotation.png)
+
+After the above study, we know that we cannot let the k1 be the root node, and the one rotation is not work. so, we should place the k3 as the new root, and let the k1 to be k3's left child, the let the Y1 to be the right subtree of k1, and let the k2 to be the left child of k3, the Y2 to be the left subtree of k2. And then, we finished the rebalance. Maybe my words are complicated(because my English is really bad), but the picture above is clear. Try think about it yourself, if you cannot read my words.
+
+> And situation two and situation three are mirroring problems. So, the same idea.
+> And we call the double rotation of second situation **Left-Right**, and for situation three, called **Right-Left**.
+
+#### Deletion
+
+We talk about deletion in the [code.](../../trees/avl_trees.h)
 
