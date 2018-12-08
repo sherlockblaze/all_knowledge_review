@@ -1,14 +1,13 @@
-**RENAME!!!!**
-
 # All My Knowledge Review
 
 ***WARNING: My English is REALLY POOR!!***
 
-Not only about the computer science review I go before and not get yet, but also about math, english, physics and so on, everything I got before and not get yet, I'll review here. And it's a long-term battle, the content will be updated everyday. 
-We will:
-+ **Review theoretical knowledge from Monday to Firday, and we will do some exercises or write code on weekends. If it is a basic subject, we will find some classic and difficult exercises to complete.**
-+ **Discuss some classic or excellent projects, such as an operating system, network protocols, Redis, Nginx and so on.**
-+ **Do our own actual combat projects, all here, from the beginning。**
+Here I'll review all my knowledge that i have got before and haven't got yet. It includes not only **Computer Science** but also **Mathematics**, **English**, **Physics** and so on.
+It will be a long-term battle, and the content will be updated everyday. I will:
+
++ **Review theoretical knowledge from Monday to Friday and do some exercises or write codes on weekends. Find some classic and difficult exercises to complete if it is a basic subject;**
++ **Discuss some classic or excellent projects, such as an Operating System, Network Protocols, Redis, Nginx and so on;**
++ **Practical drill. From the beginning.**
 
 **Let's GO!!!!**
 

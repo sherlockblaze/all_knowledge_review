@@ -13,11 +13,11 @@ It's a binary tree with a **balance condition**.
 
 > And we get **the balance condition must be easy to maintain, and it ensures that the depth of the tree is O(logN).**
 
-As we know, and AVL tree is identical to a binary search tree, except that for **every node in the tree, the height of the left and right subtrees can differ by at most 1.** (The hight of an empty tree is defined to be -1.)
+As we know, the AVL tree is identical to a binary search tree, except that for **every node in the tree, the height of the left and right subtrees can differ by at most 1.** (The hight of an empty tree is defined to be -1.)
 
 > Do you guys remember what is depth of a node??
 
-> We review quickly here. **A depth of a node is length of the only way from root to this node.** And if you almost forget the basic concepts of trees. Go [there](./Trees.md#Basic-Concept-Of-Tree) for more.
+> We review quickly here. **The depth of a node is the length of the only way from root to this node.** And if you almost forget the basic concepts of trees. Go [there](./Trees.md#Basic-Concept-Of-Tree) for more.
 
 ![](../../pic/trees/what_is_a_avl_tree.png)
 
@@ -44,7 +44,7 @@ For example, if we insert 10 maybe bigger into the left tree above would destroy
 
 Not AVL Tree any more.
 
-**We should keep the average depth of tree is O(logN).** It turns out that this can always be done with a simple modification to the tree, known as a ***[rotation](#Rotation)***.
+**We should keep the average depth of tree is O(logN).** It turns out that this can always be done with a simple modification to the tree, known as a ***[Rotation](#Rotation)*** .
 
 ##### Rotation
 
