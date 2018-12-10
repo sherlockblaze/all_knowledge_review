@@ -51,6 +51,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 	- [ ] [Binary Trees](./knowledge/data_structures/doc/trees/BinaryTrees.md#Binary-Trees)
 	- [ ] [Search Tree - Binary Search Tree](./knowledge/data_structures/doc/trees/BinarySearchTree.md#Binary-Search-Tree)
 	- [ ] [AVL Trees](./knowledge/data_structures/doc/trees/AvlTree.md#AVL-Trees)
+	- [ ] [Red-Black Trees](./knowledge/data_structures/doc/trees/Red-BlackTrees.md#Red-Black-Trees)
 	- [ ] Splay Trees
 	- [ ] B-Trees
 	- [ ] Red Black Trees

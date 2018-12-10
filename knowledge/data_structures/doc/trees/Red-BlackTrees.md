@@ -35,7 +35,39 @@ So, it's a better **binary search tree**.
 ##### Rotations
 
 - [What's it for?](#whats_it_for_rotations)
+- [What's it?](#whats_it_rotations)
+- [Operations](#operations_rotations)
 
-<h6 id="whats_it_for_rotations">What's it for?<h6>
+<h6 id="whats_it_for_rotations">What's it for?</h6>
 
+**The operations Insert and Delete modify the tree, the result may violate the red-black properties. We need to do something to restore these properties.**
+
+<h6 id="whats_it_rotations">What's it?</h6>
+
+**It's a local operation in a search tree that preserves the binary-search-tree property.**
+
+<h6 id="operations_rotations">Operations</h6>
+
+We show two kinds of rotations here: **Left-Rotate** and **Right-Rotate**.
+
+![](../../pic/trees/basic_rotations.png)
+
+> The above two node states are converted by **Left-Rotation** and **Right-Rotation**.
+
+###### Precedes
+
+```c
+y = x.right
+x.right == y.left
+if y.left != NULL
+    y.left.p = x
+y.p = x.p
+if x.p == NULL
+    T.root = y
+elseif x == x.p.left
+    x.p.left =y
+else x.p.right = y
+y.left = x
+x.p = y
+```
 
