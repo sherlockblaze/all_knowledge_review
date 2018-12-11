@@ -56,6 +56,8 @@ We show two kinds of rotations here: **Left-Rotate** and **Right-Rotate**.
 
 ###### Precedes
 
++ Left-Rotate
+
 ```c
 y = x.right
 x.right == y.left
@@ -70,4 +72,6 @@ else x.p.right = y
 y.left = x
 x.p = y
 ```
+
+##### Insert
 
