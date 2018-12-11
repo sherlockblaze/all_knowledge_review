@@ -54,7 +54,6 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 	- [ ] [Red-Black Trees](./knowledge/data_structures/doc/trees/Red-BlackTrees.md#Red-Black-Trees)(Unfinished)
 	- [ ] Splay Trees
 	- [ ] B-Trees
-	- [ ] Red Black Trees
 	- [ ] AA-Trees
 	- [ ] k-d Trees
 - [ ] Hashing
