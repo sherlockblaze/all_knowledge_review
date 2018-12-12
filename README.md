@@ -82,6 +82,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 
 > **Here is some rules about Algorithms.**
 
+- [ ] [Growth Of Function](./knowledge/algorithms/rules/GrowthOfFunction.md#Growth-Of-Function)
 - [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md#Loop-Invariants)
 
 ### Machine Learning
