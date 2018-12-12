@@ -105,7 +105,7 @@ RB-INSERT(T, z)
 	else y.right = z
 	z.left = T.nil
 	z.right = T.nil
-	z.color = Red
+	z.color = RED
 	RB-INSERT-FIXUP(T, z)
 ```
 
