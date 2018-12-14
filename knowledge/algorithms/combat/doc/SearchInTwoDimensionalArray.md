@@ -31,4 +31,4 @@ If we start with the element in the upper right corner, we can know, for example
 
 ##### Code
 
-In the code, I simulated a two-dimensional array with a one-dimensional array, see the [code](../search_in_two_dimensional_array.h) for specific calculations.
+In the code, I simulated a two-dimensional array with a one-dimensional array, see specific calculations from the code: [C Version](../code/c/search_in_two_dimensional_array.h).

@@ -17,5 +17,5 @@ Explanation: 342 + 465 = 807
 
 ##### Code
 
-> Now we can use our data structures to solve some algorithms problems. This one is the first. Here's [code](../add_two_numbers.h)
+> Now we can use our data structures to solve some algorithms problems. This one is the first. Here's code: [C Version](../code/c/add_two_numbers.h)
 

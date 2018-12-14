@@ -31,4 +31,4 @@ At the last, we can get result by popping the elements from the stack.
 
 #### Code
 
-We use the [linkedlist](../../../data_structures/lists/linkedlist.h) and [stack](../../../data_structures/lists/stack.h) implemented before to implement it. Just read the [code](../reverse_print_list.h).
+We use the [linkedlist](../../../data_structures/lists/linkedlist.h) and [stack](../../../data_structures/lists/stack.h) implemented before to implement it. Just read the code: [C Version](../code/c/reverse_print_list.h).

@@ -65,4 +65,4 @@ And findlly we achieve our goal.
 
 ##### Code
 
-We use our own ArrayList to store the data and implement the algorithm, just to experiment with whether our ArrayList is easy to use. See more by reading the [code](../replace_all_spaces.h). There is a problem here, When you expand the size of the array, it will affect the value of the memory stored in the adjacent memory. You need to pay attention to it. Because I don't have a lot of connection with the algorithm itself, I ignored this problem in the code.
+We use our own ArrayList to store the data and implement the algorithm, just to experiment with whether our ArrayList is easy to use. See more by reading the code: [C Version](../code/c/replace_all_spaces.h). There is a problem here, When you expand the size of the array, it will affect the value of the memory stored in the adjacent memory. You need to pay attention to it. Because I don't have a lot of connection with the algorithm itself, I ignored this problem in the code.
