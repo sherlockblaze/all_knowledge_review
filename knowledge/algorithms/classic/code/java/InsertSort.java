@@ -8,7 +8,7 @@ public class InsertSort{
         for (int i = 1; i < arrLength; i++) {
             int key = arrays[i];
             int j = i - 1;
-            while (j >= 0 && arrays[j] < key) {
+            while (j >= 0 && arrays[j] > key) {
                 arrays[j + 1] = arrays[j];
                 j--;
             }
