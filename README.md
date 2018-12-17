@@ -11,8 +11,8 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 
 ## Status
 
-- [x] [Studing]
-- [] [Writing]
+- [x] **Studing**
+- [ ] **Writing**
 
 ## Contents
 - [Environment](#Environment)
