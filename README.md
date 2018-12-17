@@ -9,6 +9,11 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 + **Discuss some classic or excellent projects, such as an Operating System, Network Protocols, Redis, Nginx and so on;**
 + **Practical drill. From the beginning.**
 
+## Status
+
+- [x] [Studing]
+- [] [Writing]
+
 ## Contents
 - [Environment](#Environment)
 - [Knowledge](#Knowledge)
