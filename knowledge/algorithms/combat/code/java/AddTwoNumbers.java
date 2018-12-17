@@ -1,5 +1,7 @@
+import java.util.LinkedList;
+import java.util.List;
 public class AddTwoNumbers {
-	public static void addTwoNumber(List<Integer> num1, List<Integer> num2) {
+	public static List<Integer> addTwoNumber(List<Integer> num1, List<Integer> num2) {
 
         List<Integer> result = new LinkedList<Integer>();
         int i = num1.size();
@@ -19,5 +21,6 @@ public class AddTwoNumbers {
                 break;
             }
         }
+        return result;
     }
 }
