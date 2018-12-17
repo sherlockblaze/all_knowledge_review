@@ -8,13 +8,16 @@ import java.util.Map;
 public class TwoSum {
 
     public static int[] twoSum (int[] arrays, int target) {
-        Map<Integer, Integer> targetMap = new HashMap<Integer, Integer>(arrays.length);
+        Map<Integer, Integer> indexMap = new HashMap<Integer, Integer>(arrays.length);
         int[] result = new int[2];
-        for (int key : arrays) {
-            targetMap.put(key, target-key);
-            if (targetMap.containsValue(key)) {
-                result[0] = target - key;
-                result[1] = key;
+        for (int i = 0; i < arrays.length; i++) {
+            if (indexMap.get(arrays[i]) != null){
+                continue;
+            }
+            indexMap.put(arrays[i], i);
+            if (indexMap.get(target - arrays[i]) != null) {
+                result[0] = indexMap.get(arrays[i]);
+                result[1] = indexMap.get(target - arrays[i]);
                 break;
             }
         }
