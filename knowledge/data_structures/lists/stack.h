@@ -6,7 +6,7 @@
 #include "./linkedlist.h"
 
 typedef List Stack;
-List NewStack();
+Stack NewStack();
 void Push(Stack Stack, ElementType Value);
 ElementType Pop(Stack Stack);
 
@@ -30,7 +30,7 @@ ElementType
 Pop(Stack Stack)
 {
 	ElementType Value;
-	Value = Stack->Next->Value;
+	Value = Stack->Head->Value;
 	DeleteAt(Stack, 0);
 	return Value;
 } 
