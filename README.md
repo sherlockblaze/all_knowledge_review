@@ -51,7 +51,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 	- [x] [Doubly LinkedList](./knowledge/data_structures/doc/lists/DoublyLinkedList.md#Doubly-LinkedList)
 	- [x] [ArrayList](./knowledge/data_structures/doc/lists/ArrayList.md#ArrayList)
 	- [x] [Stack](./knowledge/data_structures/doc/lists/Stack.md#Stack)
-	- [ ] [Queue](./knowledge/data_structures/doc/lists/Queue.md#Queue)
+	- [x] [Queue](./knowledge/data_structures/doc/lists/Queue.md#Queue)
 - [ ] [Trees](./knowledge/data_structures/doc/trees/Trees.md#Trees)
 	- [ ] [Binary Trees](./knowledge/data_structures/doc/trees/BinaryTrees.md#Binary-Trees)
 	- [ ] [Search Tree - Binary Search Tree](./knowledge/data_structures/doc/trees/BinarySearchTree.md#Binary-Search-Tree)
