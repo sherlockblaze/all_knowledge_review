@@ -31,6 +31,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 1. work with c11
 2. work with c++11
 3. work with python3.6
+4. work with cuda10 (My Version: Nvidia Geforce 2080 Ti x 1)
 
 ## Knowledge
 
