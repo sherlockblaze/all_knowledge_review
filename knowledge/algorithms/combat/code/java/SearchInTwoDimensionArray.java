@@ -1,8 +1,8 @@
 /**
- * find the target in an increasing tow-dimension array
+ * find the target in an increasing two-dimension array
  */
 public class SearchInTwoDimensionArray {
-    public static int isExist (int[][]array, int target) {
+    public int isExist (int[][]array, int target) {
         int rows = array.length;
         int columns = array[0].length;
         int j = columns - 1;
