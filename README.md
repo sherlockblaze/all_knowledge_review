@@ -32,6 +32,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 2. work with c++11
 3. work with python3.6
 4. work with cuda10 (My Version: Nvidia Geforce 2080 Ti x 1)
+5. work with go1.11.4 (export GOPATH=yourpath/all_knowledge_review/knowledge/engineering/programming/go/code)
 
 ## Knowledge
 
