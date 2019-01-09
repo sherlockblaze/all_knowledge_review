@@ -1,6 +1,6 @@
 #ifndef _LINKEDLIST_WITH_TAIL_POINTER_H_
 #define _LINKEDLIST_WITH_TAIL_POINTER_H_
-// #define ElementType int
+#define ElementType int
 
 
 struct Node;
@@ -210,15 +210,13 @@ Insert(List L, ElementType value)
 	NewNode = (struct Node *) malloc(sizeof (struct Node));
 	if (NewNode == NULL)
 		FatalError("Insert failed. No enough room!!");
-	LastNode = L->Head;
+	LastNode = L->Tail;
 	NewNode->Value = value;
 	NewNode->Next = NULL;
 	if (LastNode == NULL)
 		L->Head = NewNode;
 	else
 	{
-		while(LastNode->Next != NULL)
-			LastNode = LastNode->Next;
 		LastNode->Next = NewNode;
 	}
 	L->Size += 1;
